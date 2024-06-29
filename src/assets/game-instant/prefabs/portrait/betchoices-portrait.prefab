@@ -694,7 +694,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "head",
+    "_name": "home",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -2184,7 +2184,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 36.7060546875,
+      "width": 36.69802002717657,
       "height": 37.8
     },
     "_anchorPoint": {
@@ -2223,7 +2223,7 @@
     "_string": "200",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 27.5,
+    "_actualFontSize": 25.955665024630544,
     "_fontSize": 22,
     "_fontFamily": "Arial",
     "_lineHeight": 30,
@@ -2708,7 +2708,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 65.1845703125,
+      "width": 65.17262870135536,
       "height": 43.8
     },
     "_anchorPoint": {
@@ -2747,7 +2747,7 @@
     "_string": "100%",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 28.75,
+    "_actualFontSize": 27.13546798029557,
     "_fontSize": 23,
     "_fontFamily": "Arial",
     "_lineHeight": 30,
@@ -2908,8 +2908,8 @@
       "__id__": 29
     },
     "component": "",
-    "_componentId": "f3fc1EjHDBMKqdZzkJVdwsk",
-    "handler": "callBet",
+    "_componentId": "b17ebvC5vVEuZE83xtTTiBH",
+    "handler": "onPFBet",
     "customEventData": ""
   },
   {
@@ -2973,7 +2973,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "tail",
+    "_name": "away",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -4469,7 +4469,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 36.7060546875,
+      "width": 36.69802002717657,
       "height": 37.8
     },
     "_anchorPoint": {
@@ -4508,7 +4508,7 @@
     "_string": "200",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 27.5,
+    "_actualFontSize": 25.955665024630544,
     "_fontSize": 22,
     "_fontFamily": "Arial",
     "_lineHeight": 30,
@@ -5081,7 +5081,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 65.1845703125,
+      "width": 65.17262870135536,
       "height": 43.8
     },
     "_anchorPoint": {
@@ -5120,7 +5120,7 @@
     "_string": "100%",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 28.75,
+    "_actualFontSize": 27.13546798029557,
     "_fontSize": 23,
     "_fontFamily": "Arial",
     "_lineHeight": 30,
@@ -5279,8 +5279,8 @@
       "__id__": 134
     },
     "component": "",
-    "_componentId": "f3fc1EjHDBMKqdZzkJVdwsk",
-    "handler": "callBet",
+    "_componentId": "b17ebvC5vVEuZE83xtTTiBH",
+    "handler": "onPFBet",
     "customEventData": ""
   },
   {

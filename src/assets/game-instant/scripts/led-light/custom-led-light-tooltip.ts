@@ -36,7 +36,7 @@ export class CustomLedLightTooltip extends LedLightTooltip {
     }
 
     protected findWinningChoice(ledLightInfo: gc.RoundHistories.RoundHistory): string {
-        const choices = [BetChoice.Trump, BetChoice.Biden];
+        const choices = [BetChoice.Away, BetChoice.Home];
         return choices.find((choice) => ledLightInfo.settlementResult[choice]) || "";
     }
 

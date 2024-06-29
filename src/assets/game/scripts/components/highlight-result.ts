@@ -27,9 +27,9 @@ export class HighlightResult extends Component {
 
     show(result: gc.GameServiceMessage.TResult) {
         const convertedResult = result as TResult;
-        const isHead = convertedResult?.head;
+        const isHome = convertedResult?.home;
 
-        this.setStatusNode(this.biden, isHead);
-        this.setStatusNode(this.trump, !isHead);
+        this.setStatusNode(this.biden, isHome);
+        this.setStatusNode(this.trump, !isHome);
     }
 }

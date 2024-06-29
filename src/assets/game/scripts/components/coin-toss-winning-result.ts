@@ -5,8 +5,8 @@ import { AnimationUtils } from "../../../../extensions/shared-components/assets/
 
 const { ccclass, property } = _decorator;
 export interface TResult {
-    head: boolean;
-    tail: boolean;
+    home: boolean;
+    away: boolean;
 }
 
 @ccclass("CoinTossWinningResult")
@@ -48,7 +48,7 @@ export class CoinTossWinningResult extends WinningResult {
 
     setResult(data: gc.GameServiceMessage.TResult) {
         const convertData = data as TResult;
-        this.skinName = this.getSkinName(convertData?.head || false);
-        this.trackIndex = this.getTrackIndex(convertData?.head || false);
+        this.skinName = this.getSkinName(convertData?.home || false);
+        this.trackIndex = this.getTrackIndex(convertData?.home || false);
     }
 }
