@@ -1,4 +1,4 @@
 export enum BetChoice {
-    Trump = "tail",
-    Biden = "head",
+    Trump = "home",
+    Biden = "away",
 }

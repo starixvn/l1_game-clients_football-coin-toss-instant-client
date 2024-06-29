@@ -3,8 +3,8 @@ import { LogStore } from "db://shared-components/game/scripts/stores/log-store";
 import { sharedContainer } from "../../scripts/shared-container";
 
 export const settings = {
-    id: 80,
-    name: "CoinToss",
+    id: 93,
+    name: "FootballCoinToss",
     durations: {
         wholeRound: 29,
         lockingBet: 3,
