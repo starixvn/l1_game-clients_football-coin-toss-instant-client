@@ -164,6 +164,7 @@ export const languages = {
         "you_reach_max_win": "Anda mencapai Maksimal Menang"
     },
     "FootballCoinToss": {
+        "game_name": "EURO 2024 RNG",
         "glossary_away": "Tandang",
         "glossary_home": "Kandang"
     },

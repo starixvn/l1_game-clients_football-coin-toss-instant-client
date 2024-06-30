@@ -166,7 +166,7 @@ export const languages = {
         "you_reach_max_win": "You reached the max win"
     },
     "FootballCoinToss": {
-        "game_name": "Coin Toss Euro 2024",
+        "game_name": "EURO 2024 RNG",
         "glossary_away": "Away",
         "glossary_home": "Home"
     },

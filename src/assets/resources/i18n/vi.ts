@@ -165,7 +165,7 @@ export const languages = {
         "you_reach_max_win": "Bạn Đã Đạt Mức Tiền Thắng Tối Đa"
     },
     "FootballCoinToss": {
-        "game_name": "Tung Đồng Xu Bóng Đá",
+        "game_name": "EURO 2024 RNG",
         "glossary_away": "Đội Khách",
         "glossary_home": "Đội Nhà"
     },

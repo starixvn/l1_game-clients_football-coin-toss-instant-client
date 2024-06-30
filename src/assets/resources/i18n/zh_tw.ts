@@ -164,6 +164,7 @@ export const languages = {
         "you_reach_max_win": "您達到了最大勝利"
     },
     "FootballCoinToss": {
+        "game_name": "EURO 2024 RNG",
         "glossary_away": "客隊",
         "glossary_home": "主隊"
     },
