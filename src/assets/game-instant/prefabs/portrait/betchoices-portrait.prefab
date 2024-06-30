@@ -1021,10 +1021,7 @@
       "b": 255,
       "a": 255
     },
-    "_spriteFrame": {
-      "__uuid__": "84dec63d-3bf1-414b-83e4-3eee68261480@f9941",
-      "__expectedType__": "cc.SpriteFrame"
-    },
+    "_spriteFrame": null,
     "_type": 0,
     "_fillType": 0,
     "_sizeMode": 1,
@@ -1121,7 +1118,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 75.03649975204819,
+      "width": 0,
       "height": 50.400000000000006
     },
     "_anchorPoint": {
@@ -1157,7 +1154,7 @@
       "b": 2,
       "a": 255
     },
-    "_string": "home",
+    "_string": "",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 40.23399014778325,
@@ -2809,6 +2806,10 @@
     "flag": {
       "__id__": 39
     },
+    "flagsAtlas": {
+      "__uuid__": "550e143d-fe68-49e7-831f-4c88aec01edf",
+      "__expectedType__": "cc.SpriteAtlas"
+    },
     "lblTeamName": {
       "__id__": 45
     },
@@ -3266,7 +3267,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 70.02722095107683,
+      "width": 0,
       "height": 50.400000000000006
     },
     "_anchorPoint": {
@@ -3302,7 +3303,7 @@
       "b": 255,
       "a": 255
     },
-    "_string": "away",
+    "_string": "",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
     "_actualFontSize": 40.23399014778325,
@@ -5079,6 +5080,10 @@
     },
     "flag": {
       "__id__": 138
+    },
+    "flagsAtlas": {
+      "__uuid__": "550e143d-fe68-49e7-831f-4c88aec01edf",
+      "__expectedType__": "cc.SpriteAtlas"
     },
     "lblTeamName": {
       "__id__": 144

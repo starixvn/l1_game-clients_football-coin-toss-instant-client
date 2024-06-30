@@ -1,9 +1,9 @@
-import { _decorator, ImageAsset, Label, Node, resources, Sprite, SpriteFrame, UIOpacity } from "cc";
+import { _decorator, Label, Node, Sprite, SpriteAtlas, UIOpacity } from "cc";
 import { PFBetItem } from "db://shared-components/provably-fair/round-base/scripts/pf-bet-item";
 import Observer from "observer";
 
-import { MatchConfigStore } from "../match-config/match-config-store";
 import { GameServiceMessage } from "../game-messages";
+import { MatchConfigStore } from "../match-config/match-config-store";
 
 const { ccclass, property } = _decorator;
 const { render } = Observer;
@@ -12,6 +12,9 @@ const { render } = Observer;
 export class CoinTossBetItem extends PFBetItem {
     @property(Sprite)
     flag: Sprite = null;
+
+    @property(SpriteAtlas)
+    flagsAtlas: SpriteAtlas = null;
 
     @property(Label)
     lblTeamName: Label = null;
@@ -22,9 +25,10 @@ export class CoinTossBetItem extends PFBetItem {
     @render(MatchConfigStore, (store) => store.match, { fireImmediately: true })
     updateTeamName(match: GameServiceMessage.MatchConfig) {
         if (match.home && match.away) {
-            const teamCode = match[this.node.name];
+            const teamType = this.node.name;
+            const teamCode = match[teamType];
             this.lblTeamName.string = teamCode;
-            this.loadFlag(teamCode);
+            this.loadFlag(teamCode, teamType);
         }
     }
 
@@ -34,15 +38,8 @@ export class CoinTossBetItem extends PFBetItem {
         this.lblOwnBet && (this.lblOwnBet.getComponent(UIOpacity).opacity = isActive ? 180 : 255);
     }
 
-    loadFlag(teamCode: string) {
-        resources.load(`flags/${teamCode.toLowerCase()}`, ImageAsset, (err, imageAsset) => {
-            if (err) {
-                console.log(err);
-                // Should load default image here
-                return;
-            }
-
-            this.flag.spriteFrame = SpriteFrame.createWithImage(imageAsset);
-        });
+    loadFlag(teamCode: string, teamType: string) {
+        const spriteFrame = this.flagsAtlas.getSpriteFrame(teamCode.toLowerCase());
+        this.flag.spriteFrame = spriteFrame ?? this.flagsAtlas.getSpriteFrame(teamType);
     }
 }

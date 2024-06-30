@@ -1157,7 +1157,7 @@
     "_string": "",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 38.793103448275865,
+    "_actualFontSize": 40.23399014778325,
     "_fontSize": 30,
     "_fontFamily": "Arial",
     "_lineHeight": 40,
@@ -2181,8 +2181,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 30.024664306640624,
-      "height": 37.8
+      "width": 30.031711714983643,
+      "height": 37.800000000000004
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -2220,7 +2220,7 @@
     "_string": "200",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 23.275862068965516,
+    "_actualFontSize": 24.14039408866995,
     "_fontSize": 18,
     "_fontFamily": "Arial",
     "_lineHeight": 30,
@@ -2429,7 +2429,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 50.29860921223958,
+      "width": 50.30412523674243,
       "height": 43.800000000000004
     },
     "_anchorPoint": {
@@ -2468,7 +2468,7 @@
     "_string": "98%",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 28.448275862068968,
+    "_actualFontSize": 29.504926108374384,
     "_fontSize": 22,
     "_fontFamily": "Arial",
     "_lineHeight": 30,
@@ -2805,6 +2805,10 @@
     },
     "flag": {
       "__id__": 39
+    },
+    "flagsAtlas": {
+      "__uuid__": "550e143d-fe68-49e7-831f-4c88aec01edf",
+      "__expectedType__": "cc.SpriteAtlas"
     },
     "lblTeamName": {
       "__id__": 45
@@ -3296,7 +3300,7 @@
     "_string": "",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 38.793103448275865,
+    "_actualFontSize": 40.23399014778325,
     "_fontSize": 30,
     "_fontFamily": "Arial",
     "_lineHeight": 40,
@@ -4320,8 +4324,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 30.024664306640624,
-      "height": 37.8
+      "width": 30.031711714983643,
+      "height": 37.800000000000004
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -4359,7 +4363,7 @@
     "_string": "200",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 23.275862068965516,
+    "_actualFontSize": 24.14039408866995,
     "_fontSize": 18,
     "_fontFamily": "Arial",
     "_lineHeight": 30,
@@ -4568,7 +4572,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 50.29860921223958,
+      "width": 50.30412523674243,
       "height": 43.800000000000004
     },
     "_anchorPoint": {
@@ -4607,7 +4611,7 @@
     "_string": "22%",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 28.448275862068968,
+    "_actualFontSize": 29.504926108374384,
     "_fontSize": 22,
     "_fontFamily": "Arial",
     "_lineHeight": 30,
@@ -4944,6 +4948,10 @@
     },
     "flag": {
       "__id__": 138
+    },
+    "flagsAtlas": {
+      "__uuid__": "550e143d-fe68-49e7-831f-4c88aec01edf",
+      "__expectedType__": "cc.SpriteAtlas"
     },
     "lblTeamName": {
       "__id__": 144
