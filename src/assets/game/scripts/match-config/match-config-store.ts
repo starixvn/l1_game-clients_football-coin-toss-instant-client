@@ -21,6 +21,10 @@ export class MatchConfigStore {
         this._away = match?.away;
     }
 
+    get match(): GameServiceMessage.MatchConfig {
+        return { home: this._home, away: this._away };
+    }
+
     get home(): string {
         return this._home;
     }
