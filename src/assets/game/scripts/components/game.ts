@@ -1,5 +1,5 @@
 import gc from "@sg/game-client-base";
-import { Label, Node, _decorator } from "cc";
+import { ImageAsset, Label, Node, Sprite, SpriteFrame, _decorator, assetManager, resources } from "cc";
 import GameComponent from "db://shared-components/game/scripts/components/game-component";
 import { startGame } from "db://shared-components/shared/scripts/startup";
 import Observer from "observer";
@@ -61,6 +61,7 @@ export default class Game extends GameComponent {
         this.fetchComponents();
         this.winningResult.hideQuickly();
         this.flipCoin.init();
+        this.loadFlag();
     }
 
     fetchComponents() {
@@ -160,5 +161,16 @@ export default class Game extends GameComponent {
             this.flipCoin.setStatusNode(false);
             this.highlightResult.show(result);
         }
+    }
+
+    loadFlag() {
+        // resources.load("flags/ita", ImageAsset, (err, imageAsset) => {
+        //     console.log(imageAsset, err);
+        //     //this.node.getComponent(Sprite).spriteFrame = spriteFrame;
+        //     const sprite = this.node.getChildByName("flag")?.getComponent(Sprite);
+        //     if (sprite) {
+        //         sprite.spriteFrame = SpriteFrame.createWithImage(imageAsset);
+        //     }
+        // });
     }
 }

@@ -3,6 +3,7 @@ import { PFBetItem } from "db://shared-components/provably-fair/round-base/scrip
 import Observer from "observer";
 
 import { MatchConfigStore } from "../match-config/match-config-store";
+import { GameServiceMessage } from "../game-messages";
 
 const { ccclass, property } = _decorator;
 const { render } = Observer;
@@ -18,9 +19,12 @@ export class CoinTossBetItem extends PFBetItem {
     @property(Node)
     loseBg: Node = null;
 
-    @render(MatchConfigStore, (store) => store.match, { fireImmediately: false })
-    updateTeamName(match) {
-        this.lblTeamName.string = match[this.node.name];
+    @render(MatchConfigStore, (store) => store.match, { fireImmediately: true })
+    updateTeamName(match: GameServiceMessage.MatchConfig) {
+        if (match.home && match.away) {
+            this.lblTeamName.string = match[this.node.name];
+            console.log("updateTeamName", match);
+        }
     }
 
     public handleHighlightAnim(isActive: boolean) {
