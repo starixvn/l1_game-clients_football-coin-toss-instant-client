@@ -27,17 +27,20 @@ export class CoinTossBetItem extends PFBetItem {
     loseBg: Node = null;
 
     private match: GameServiceMessage.MatchConfig;
+    private lastMatch: GameServiceMessage.LastMatchConfig;
+    private isFirstJoin: false;
 
     @render(MatchConfigStore, (store) => store.match, { fireImmediately: true })
     updateTeamName(match: GameServiceMessage.MatchConfig) {
         if (match.home && match.away) {
-            const teamType = this.node.name;
-            const teamCode = match[teamType];
-            // const teamCode = match[this.node.name];
-            // this.lblTeamName.string = teamCode;
-            // this.loadFlag(teamCode);
-            this.loadFlag(teamCode, teamType);
             this.match = match;
+        }
+    }
+
+    @render(MatchConfigStore, (store) => store.lastMatch, { fireImmediately: false })
+    updateLastMatchTeamName(lastMatch: GameServiceMessage.LastMatchConfig) {
+        if (lastMatch.home && lastMatch.away) {
+            this.lastMatch = lastMatch;
         }
     }
 
@@ -49,26 +52,27 @@ export class CoinTossBetItem extends PFBetItem {
 
         const { animationHighlight, roundTime, roundHistory: lastRound } = firstJoinGameHistory;
         if (lastRound && animationHighlight && roundTime > 0) {
-            console.log("display previous match", this.match, roundTime);
+            console.log("display previous match", this.lastMatch.home, this.lastMatch.away, this.lastMatch.roundId, roundTime);
+            this.setTeam(this.lastMatch);
         } else {
-            console.log("display current match", this.match, roundTime);
+            console.log("display current match", this.match.home, this.match.away, roundTime);
+            this.setTeam(this.match);
         }
     }
 
-    // @render(RoundTimeStore, (store) => store.countdownTimer)
-    // setTime(time: number) {
-    //     if(time <= settings)
-    // }
-
     @render(RoundTimeStore, (store) => store.isStartPlacingBet, { fireImmediately: true })
     receiveRoundTime(isStartPlacingBet) {
-        console.log("receiveRoundTime", isStartPlacingBet);
+        if (isStartPlacingBet) {
+            this.setTeam(this.match);
+        }
     }
 
-    // @render(RoundTimeStore, (store) => store, { fireImmediately: true })
-    // startDisplayFlag(roundTime) {
-    //     console.log(roundTime);
-    // }
+    private setTeam(match: GameServiceMessage.MatchConfig) {
+        const teamType = this.node.name;
+        const teamCode = match[teamType];
+        this.lblTeamName.string = teamCode;
+        this.loadFlag(teamCode, teamType);
+    }
 
     public handleHighlightAnim(isActive: boolean) {
         this.loseBg.active = isActive;

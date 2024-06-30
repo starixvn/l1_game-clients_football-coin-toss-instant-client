@@ -1,21 +1,42 @@
-import { IHandler } from "@sg/game-client-base/dist/shared";
+import { IHandler, IMultipleHandlers } from "@sg/game-client-base/dist/shared";
 import inversify from "inversify";
 
 import { GameServiceMessage } from "../game-messages";
 import { MatchConfigStore } from "./match-config-store";
+import gc from "@sg/game-client-base";
 
 const { injectable, inject } = inversify;
 
 @injectable()
-export class MatchConfigHandler implements IHandler<GameServiceMessage.MatchConfig> {
-    name = GameServiceMessage.MatchConfig.eventName;
-
+export class MatchConfigHandler implements IMultipleHandlers {
     @inject(MatchConfigStore) private readonly matchConfigStore: MatchConfigStore;
 
-    handle(match: GameServiceMessage.MatchConfig) {
+    handleMatch(match: GameServiceMessage.MatchConfig) {
         if (match) {
             this.matchConfigStore.match = match;
-            console.log(match);
         }
     }
+
+    handleLastMatch(roundHistories: gc.RoundHistories.RoundHistory[]) {
+        if (roundHistories && roundHistories.length > 0) {
+            const parsedMatch = (roundHistories[0] as any).match;
+            const lastMatch = {
+                home: `${parsedMatch.home}-1`,
+                away: `${parsedMatch.away}-1`,
+                roundId: roundHistories[0].roundId,
+            };
+            this.matchConfigStore.lastMatch = lastMatch;
+        }
+    }
+
+    eventHandleList = [
+        {
+            name: GameServiceMessage.MatchConfig.eventName,
+            handle: this.handleMatch,
+        },
+        {
+            name: GameServiceMessage.LastMatchConfig.eventName,
+            handle: this.handleLastMatch,
+        },
+    ];
 }
