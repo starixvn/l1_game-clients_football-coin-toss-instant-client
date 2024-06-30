@@ -1,16 +1,19 @@
 import gc from "@sg/game-client-base";
-import { ImageAsset, Label, Node, Sprite, SpriteFrame, _decorator, assetManager, resources } from "cc";
+import { Label, Node, _decorator, log, sp } from "cc";
 import GameComponent from "db://shared-components/game/scripts/components/game-component";
 import { startGame } from "db://shared-components/shared/scripts/startup";
 import Observer from "observer";
+import { AudioUtils } from "../../../../extensions/shared-components/assets/game/audios/utils";
+import { bundleManager } from "../../../../extensions/shared-components/assets/shared/common-components/bundle-magager/bundle-manager";
+import { FunctionUtils } from "../../../../extensions/shared-components/assets/shared/utils";
 import { siteConfigs } from "../../../scripts/site-configs";
+import { GameServiceMessage } from "../game-messages";
 import { containerOptions, settings } from "../game-settings";
+import { MatchConfigStore } from "../match-config";
 import "./../../../resources/i18n";
 import { CoinTossWinningResult } from "./coin-toss-winning-result";
 import { FlipCoin } from "./flip-coin";
 import { HighlightResult } from "./highlight-result";
-import { AudioUtils } from "../../../../extensions/shared-components/assets/game/audios/utils";
-import { FunctionUtils } from "../../../../extensions/shared-components/assets/shared/utils";
 
 const { Rounds, Translator, RoundHistories } = gc;
 
@@ -160,6 +163,36 @@ export default class Game extends GameComponent {
             const { result } = lastRound;
             this.flipCoin.setStatusNode(false);
             this.highlightResult.show(result);
+        }
+    }
+
+    @render(MatchConfigStore, (store) => store.match, { fireImmediately: true })
+    async updateTeamName(match: GameServiceMessage.MatchConfig) {
+        if (match?.home && match?.away) {
+            const resourcePath = match?.home.toUpperCase() || "default";
+            await this.loadResourcesAnim(resourcePath);
+        }
+    }
+
+    async loadResourcesAnim(path: string) {
+        try {
+            const skeletonData = (await bundleManager.loadAssetsFromBundle(
+                "resources",
+                `animations/${path}/coin_toss`,
+                sp.SkeletonData,
+                null
+            )) as sp.SkeletonData;
+
+            if (!skeletonData) {
+                return;
+            }
+
+            this.flipCoin?.setSkeletonData(skeletonData);
+            this.winningResult?.setSkeletonData(skeletonData);
+        } catch (error) {
+            log("loadResourcesAnim error", error.message);
+
+            return null;
         }
     }
 }

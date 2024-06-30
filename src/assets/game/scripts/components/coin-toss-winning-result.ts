@@ -51,4 +51,11 @@ export class CoinTossWinningResult extends WinningResult {
         this.skinName = this.getSkinName(convertData?.home || false);
         this.trackIndex = this.getTrackIndex(convertData?.home || false);
     }
+
+    setSkeletonData(skeletonData: sp.SkeletonData) {
+        if (this.skeleton && skeletonData) {
+            this.skeleton.skeletonData = skeletonData;
+            this.skeleton.setAnimation(0, this.animName, true);
+        }
+    }
 }

@@ -1,4 +1,4 @@
-import { Component, _decorator, sp, Node } from "cc";
+import { Component, Node, _decorator, sp } from "cc";
 import { AnimationUtils } from "../../../../extensions/shared-components/assets/shared/utils";
 
 const { ccclass, property } = _decorator;
@@ -27,6 +27,15 @@ export class FlipCoin extends Component {
     async playAnim() {
         this.setStatusNode(true);
         this.hand && (this.hand.active = false);
-        this.skeleton && (await AnimationUtils.playSpine(this.skeleton, this.animName, false, this.durationFlipCoin));
+        this.skeleton &&
+            (await AnimationUtils.playSpine(this.skeleton.getComponent(sp.Skeleton), this.animName, false, this.durationFlipCoin));
+    }
+
+    setSkeletonData(skeletonData: sp.SkeletonData) {
+        if (this.skeleton) {
+            this.skeleton.skeletonData = skeletonData;
+
+            this.skeleton.setAnimation(0, this.animName, true);
+        }
     }
 }
