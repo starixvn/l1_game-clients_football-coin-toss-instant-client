@@ -174,11 +174,11 @@ export default class Game extends GameComponent {
         }
     }
 
-    async loadResourcesAnim(path: string) {
+    async loadResourcesAnim(resourcePath: string) {
         try {
             const skeletonData = (await bundleManager.loadAssetsFromBundle(
                 "resources",
-                `animations/${path}/coin_toss`,
+                `animations/${resourcePath}/toss/coin_toss`,
                 sp.SkeletonData,
                 null
             )) as sp.SkeletonData;
