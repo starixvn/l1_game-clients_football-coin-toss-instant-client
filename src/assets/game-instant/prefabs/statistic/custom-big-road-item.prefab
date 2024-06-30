@@ -1487,7 +1487,7 @@
       "__id__": 77
     },
     "image": {
-      "__uuid__": "62dba303-8fb5-427b-bd8e-5cab8dbf20de@3799f",
+      "__uuid__": "62dba303-8fb5-427b-bd8e-5cab8dbf20de@0051b",
       "__expectedType__": "cc.SpriteFrame"
     }
   },
@@ -1502,7 +1502,7 @@
       "__id__": 79
     },
     "image": {
-      "__uuid__": "62dba303-8fb5-427b-bd8e-5cab8dbf20de@0051b",
+      "__uuid__": "62dba303-8fb5-427b-bd8e-5cab8dbf20de@3799f",
       "__expectedType__": "cc.SpriteFrame"
     }
   },
