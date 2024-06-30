@@ -61,7 +61,6 @@ export default class Game extends GameComponent {
         this.fetchComponents();
         this.winningResult.hideQuickly();
         this.flipCoin.init();
-        this.loadFlag();
     }
 
     fetchComponents() {
@@ -161,16 +160,5 @@ export default class Game extends GameComponent {
             this.flipCoin.setStatusNode(false);
             this.highlightResult.show(result);
         }
-    }
-
-    loadFlag() {
-        // resources.load("flags/ita", ImageAsset, (err, imageAsset) => {
-        //     console.log(imageAsset, err);
-        //     //this.node.getComponent(Sprite).spriteFrame = spriteFrame;
-        //     const sprite = this.node.getChildByName("flag")?.getComponent(Sprite);
-        //     if (sprite) {
-        //         sprite.spriteFrame = SpriteFrame.createWithImage(imageAsset);
-        //     }
-        // });
     }
 }

@@ -1,4 +1,4 @@
-import { _decorator, Label, Node, Sprite, UIOpacity } from "cc";
+import { _decorator, ImageAsset, Label, Node, resources, Sprite, SpriteFrame, UIOpacity } from "cc";
 import { PFBetItem } from "db://shared-components/provably-fair/round-base/scripts/pf-bet-item";
 import Observer from "observer";
 
@@ -22,8 +22,9 @@ export class CoinTossBetItem extends PFBetItem {
     @render(MatchConfigStore, (store) => store.match, { fireImmediately: true })
     updateTeamName(match: GameServiceMessage.MatchConfig) {
         if (match.home && match.away) {
-            this.lblTeamName.string = match[this.node.name];
-            console.log("updateTeamName", match);
+            const teamCode = match[this.node.name];
+            this.lblTeamName.string = teamCode;
+            this.loadFlag(teamCode);
         }
     }
 
@@ -31,5 +32,17 @@ export class CoinTossBetItem extends PFBetItem {
         this.loseBg.active = isActive;
         this.lblTotalBet && (this.lblTotalBet.getComponent(UIOpacity).opacity = isActive ? 180 : 255);
         this.lblOwnBet && (this.lblOwnBet.getComponent(UIOpacity).opacity = isActive ? 180 : 255);
+    }
+
+    loadFlag(teamCode: string) {
+        resources.load(`flags/${teamCode.toLowerCase()}`, ImageAsset, (err, imageAsset) => {
+            if (err) {
+                console.log(err);
+                // Should load default image here
+                return;
+            }
+
+            this.flag.spriteFrame = SpriteFrame.createWithImage(imageAsset);
+        });
     }
 }
