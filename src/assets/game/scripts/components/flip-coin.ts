@@ -34,8 +34,6 @@ export class FlipCoin extends Component {
     setSkeletonData(skeletonData: sp.SkeletonData) {
         if (this.skeleton) {
             this.skeleton.skeletonData = skeletonData;
-
-            this.skeleton.setAnimation(0, this.animName, true);
         }
     }
 }

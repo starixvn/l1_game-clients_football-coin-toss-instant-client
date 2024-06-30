@@ -53,9 +53,8 @@ export class CoinTossWinningResult extends WinningResult {
     }
 
     setSkeletonData(skeletonData: sp.SkeletonData) {
-        if (this.skeleton && skeletonData) {
+        if (this.skeleton) {
             this.skeleton.skeletonData = skeletonData;
-            this.skeleton.setAnimation(0, this.animName, true);
         }
     }
 }
