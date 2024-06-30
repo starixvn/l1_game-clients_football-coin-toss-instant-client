@@ -1,12 +1,12 @@
-import { ResultStatistic } from "db://shared-components/game/result-statistic/scripts/components/result-statistic";
-import { _decorator } from "cc";
-const { ccclass, property } = _decorator;
 import gc from "@sg/game-client-base";
+import { _decorator } from "cc";
+import { ResultStatistic } from "db://shared-components/game/result-statistic/scripts/components/result-statistic";
+const { ccclass, property } = _decorator;
 
 @ccclass("CoinTossResultStatistic")
 export class CoinTossResultStatistic extends ResultStatistic {
     @property({ override: true })
-    supportStatisticKeys = "head,tail";
+    supportStatisticKeys = "home,away";
 
     protected generateStatisticalData(histories: gc.RoundHistories.RoundHistory[]) {
         const statisticCount = histories.reduce((result, history) => {

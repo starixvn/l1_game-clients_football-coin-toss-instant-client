@@ -71,7 +71,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "head",
+    "_name": "home",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -125,7 +125,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "biden",
+    "_name": "home",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -193,7 +193,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 157.47002469034172,
+      "width": 154.11406444286084,
       "height": 98.28
     },
     "_anchorPoint": {
@@ -229,10 +229,10 @@
       "b": 255,
       "a": 255
     },
-    "_string": "BIDEN",
+    "_string": "HOME",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 51.19211822660099,
+    "_actualFontSize": 59.05418719211823,
     "_fontSize": 48,
     "_fontFamily": "Arial",
     "_lineHeight": 78,
@@ -267,7 +267,7 @@
     "__prefab": {
       "__id__": 9
     },
-    "key": "CoinToss.glossary_head",
+    "key": "FootballCoinToss.glossary_home",
     "format": 1,
     "_id": ""
   },
@@ -310,7 +310,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "head-value",
+    "_name": "home-value",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -372,8 +372,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 26.83481849864228,
-      "height": 90.72
+      "width": 26.83403471831206,
+      "height": 90.72000000000001
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -411,7 +411,7 @@
     "_string": "0",
     "_horizontalAlign": 0,
     "_verticalAlign": 1,
-    "_actualFontSize": 51.19211822660099,
+    "_actualFontSize": 59.05418719211823,
     "_fontSize": 48,
     "_fontFamily": "Arial",
     "_lineHeight": 72,
@@ -490,7 +490,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "tail",
+    "_name": "away",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -544,7 +544,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "trump",
+    "_name": "away",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -612,7 +612,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 176.99264519319246,
+      "width": 147.15361058079563,
       "height": 98.28
     },
     "_anchorPoint": {
@@ -648,10 +648,10 @@
       "b": 25,
       "a": 255
     },
-    "_string": "TRUMP",
+    "_string": "AWAY",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 51.19211822660099,
+    "_actualFontSize": 59.05418719211823,
     "_fontSize": 48,
     "_fontFamily": "Arial",
     "_lineHeight": 78,
@@ -686,7 +686,7 @@
     "__prefab": {
       "__id__": 29
     },
-    "key": "CoinToss.glossary_tail",
+    "key": "FootballCoinToss.glossary_away",
     "format": 1,
     "_id": ""
   },
@@ -729,7 +729,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "tail-value",
+    "_name": "away-value",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -791,8 +791,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 26.83481849864228,
-      "height": 90.72
+      "width": 26.83403471831206,
+      "height": 90.72000000000001
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -830,7 +830,7 @@
     "_string": "0",
     "_horizontalAlign": 0,
     "_verticalAlign": 1,
-    "_actualFontSize": 51.19211822660099,
+    "_actualFontSize": 59.05418719211823,
     "_fontSize": 48,
     "_fontFamily": "Arial",
     "_lineHeight": 72,
@@ -991,7 +991,7 @@
         "__id__": 49
       }
     ],
-    "supportStatisticKeys": "head,tail",
+    "supportStatisticKeys": "home,away",
     "_id": ""
   },
   {
@@ -1000,14 +1000,14 @@
   },
   {
     "__type__": "ResultStatisticItemProperty",
-    "value": "head",
+    "value": "home",
     "label": {
       "__id__": 16
     }
   },
   {
     "__type__": "ResultStatisticItemProperty",
-    "value": "tail",
+    "value": "away",
     "label": {
       "__id__": 36
     }

@@ -28,14 +28,14 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 82
+        "__id__": 83
       },
       {
-        "__id__": 84
+        "__id__": 85
       }
     ],
     "_prefab": {
-      "__id__": 86
+      "__id__": 87
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -275,14 +275,14 @@
         "__id__": 73
       },
       {
-        "__id__": 77
+        "__id__": 78
       },
       {
-        "__id__": 79
+        "__id__": 80
       }
     ],
     "_prefab": {
-      "__id__": 81
+      "__id__": 82
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -1102,6 +1102,8 @@
       "__id__": 0
     },
     "fileId": "88wQlWL2VDypZf4C/XqF5a",
+    "instance": null,
+    "targetOverrides": null,
     "nestedPrefabInstanceRoots": null
   },
   {
@@ -1245,6 +1247,8 @@
       "__id__": 0
     },
     "fileId": "51dnVPKQBKlrB3ubLPtD8k",
+    "instance": null,
+    "targetOverrides": null,
     "nestedPrefabInstanceRoots": null
   },
   {
@@ -1562,6 +1566,9 @@
       },
       {
         "__id__": 76
+      },
+      {
+        "__id__": 77
       }
     ],
     "_id": ""
@@ -1573,12 +1580,17 @@
   {
     "__type__": "ScoreboardConverterProperty",
     "key": "keyOfA",
-    "value": "tail"
+    "value": "home"
   },
   {
     "__type__": "ScoreboardConverterProperty",
     "key": "blinkKey",
     "value": "blink"
+  },
+  {
+    "__type__": "ScoreboardConverterProperty",
+    "key": "keyOfA",
+    "value": "away"
   },
   {
     "__type__": "d7b60Kca8BEGqgWIhYvDlzD",
@@ -1590,7 +1602,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 78
+      "__id__": 79
     },
     "converter": {
       "__id__": 73
@@ -1614,7 +1626,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 80
+      "__id__": 81
     },
     "grid": {
       "__id__": 67
@@ -1623,7 +1635,7 @@
       "__id__": 73
     },
     "algorithm": {
-      "__id__": 77
+      "__id__": 78
     },
     "_id": ""
   },
@@ -1654,7 +1666,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 83
+      "__id__": 84
     },
     "_contentSize": {
       "__type__": "cc.Size",
@@ -1682,12 +1694,14 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 85
+      "__id__": 86
     },
     "bigRoad": {
-      "__id__": 79
+      "__id__": 80
     },
-    "beadRoad": null,
+    "beadRoad": {
+      "__id__": 80
+    },
     "_id": ""
   },
   {
