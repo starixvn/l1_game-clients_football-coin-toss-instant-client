@@ -29,11 +29,23 @@ export class CustomLedLightTooltip extends LedLightTooltip {
     }
 
     public setTooltipInfo(ledLightInfo: gc.RoundHistories.RoundHistory) {
+        const roundIdText = `#${ledLightInfo.roundId}`;
         this.roundId.string = `#${ledLightInfo.roundId}`;
         const winChoice = this.findWinningChoice(ledLightInfo);
         const name = gc.Translator.gameTranslate(`glossary_${winChoice}`);
         this.result.string = name.toUpperCase();
         this.result.color = new Color(ColorResult[winChoice]);
+
+        const backgroundTransform = this.background.getComponent(UITransform);
+        if (backgroundTransform) {
+            const letterWidth = 17;
+            const roundIdWidth = roundIdText.length * letterWidth;
+            let backgroundWidth = (name?.length || 9) * letterWidth;
+            backgroundWidth = backgroundWidth > roundIdWidth ? backgroundWidth : roundIdWidth;
+            console.log("backgroundHeight", backgroundWidth);
+            backgroundTransform.width = backgroundWidth;
+        }
+
         this.showTooltip();
     }
 
@@ -47,8 +59,8 @@ export class CustomLedLightTooltip extends LedLightTooltip {
             return;
         }
         const pos = this.background.position;
-
-        const width = this.background.getComponent(UITransform).width;
+        const backgroundTransform = this.background.getComponent(UITransform);
+        const width = backgroundTransform?.width;
         const dict = [-0.5 + this.offsetAligment, 0, 0.5 - this.offsetAligment];
         const posX = width * dict[alignment];
         this.background.position = v3(posX, pos.y, pos.z);

@@ -19,10 +19,10 @@ export default class UserBetPercentage extends ObserverComponent {
 
     @render(Rounds.RoundStore, (store) => store.userBetPercentage)
     handleUserBetPercentage(userBetPercentage: gc.GameServiceMessage.UserBetPercentage) {
-        const bidenBetPercentage = userBetPercentage?.[BetChoice.Home] ?? 0;
-        const trumpBetPercentage = userBetPercentage?.[BetChoice.Away] ?? 0;
-        const isShowProgressDefault = bidenBetPercentage === 0 && trumpBetPercentage === 0;
-        this.updateProgressBar(bidenBetPercentage, isShowProgressDefault);
+        const homeBetPercentage = userBetPercentage?.[BetChoice.Home] ?? 0;
+        const awayBetPercentage = userBetPercentage?.[BetChoice.Away] ?? 0;
+        const isShowProgressDefault = homeBetPercentage === 0 && awayBetPercentage === 0;
+        this.updateProgressBar(homeBetPercentage, isShowProgressDefault);
     }
     updateProgressBar(progress: number, isShowProgressDefault: boolean) {
         this.nodePercentageLayout.active = !isShowProgressDefault;
