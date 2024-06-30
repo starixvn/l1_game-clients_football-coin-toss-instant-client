@@ -422,7 +422,7 @@
   },
   {
     "__type__": "LedLightItemModel",
-    "choiceNames": "head",
+    "choiceNames": "home",
     "backgroundForChoice": {
       "__uuid__": "62dba303-8fb5-427b-bd8e-5cab8dbf20de@0051b",
       "__expectedType__": "cc.SpriteFrame"
@@ -430,7 +430,7 @@
   },
   {
     "__type__": "LedLightItemModel",
-    "choiceNames": "tail",
+    "choiceNames": "away",
     "backgroundForChoice": {
       "__uuid__": "62dba303-8fb5-427b-bd8e-5cab8dbf20de@3799f",
       "__expectedType__": "cc.SpriteFrame"
