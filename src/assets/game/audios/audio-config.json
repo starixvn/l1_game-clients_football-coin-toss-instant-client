@@ -1,44 +1,44 @@
 {
-    "head_music": {
+    "home_music": {
         "bundle": "resources"
     },
-    "head_en": {
+    "home_en": {
         "bundle": "resources"
     },
-    "head_vi": {
+    "home_vi": {
         "bundle": "resources"
     },
-    "head_th": {
+    "home_th": {
         "bundle": "resources"
     },
-    "head_id": {
+    "home_id": {
         "bundle": "resources"
     },
-    "head_zh_cn": {
+    "home_zh_cn": {
         "bundle": "resources"
     },
-    "head_zh_tw": {
+    "home_zh_tw": {
         "bundle": "resources"
     },
-    "tail_en": {
+    "away_music": {
         "bundle": "resources"
     },
-    "tail_vi": {
+    "away_en": {
         "bundle": "resources"
     },
-    "tail_th": {
+    "away_vi": {
         "bundle": "resources"
     },
-    "tail_id": {
+    "away_th": {
         "bundle": "resources"
     },
-    "tail_zh_cn": {
+    "away_id": {
         "bundle": "resources"
     },
-    "tail_zh_tw": {
+    "away_zh_cn": {
         "bundle": "resources"
     },
-    "tail_music": {
+    "away_zh_tw": {
         "bundle": "resources"
     }
 }

@@ -49,8 +49,8 @@ export default class Game extends GameComponent {
     override containerOptions = containerOptions;
     isLoading = true;
 
-    private readonly winningSounds = { head: "head", tail: "tail" };
-    private readonly winningMusic = { head: "head_music", tail: "tail_music" };
+    private readonly winningSounds = { home: "home", away: "away" };
+    private readonly winningMusic = { home: "home_music", away: "away_music" };
 
     protected clientRoundId = -1;
     protected resultSoundIds: ResultSoundInfo[] = [];
@@ -117,6 +117,7 @@ export default class Game extends GameComponent {
         if (isCancelLoadSounds) {
             return;
         }
+
         const winOptionName = this.winningSounds[result];
         const soundId = this.getAudioKeyForLanguage(winOptionName);
         if (soundId) {
