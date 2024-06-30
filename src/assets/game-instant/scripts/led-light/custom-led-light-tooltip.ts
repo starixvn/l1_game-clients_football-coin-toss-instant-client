@@ -30,7 +30,7 @@ export class CustomLedLightTooltip extends LedLightTooltip {
 
     public setTooltipInfo(ledLightInfo: gc.RoundHistories.RoundHistory) {
         const roundIdText = `#${ledLightInfo.roundId}`;
-        this.roundId.string = `#${ledLightInfo.roundId}`;
+        this.roundId.string = roundIdText;
         const winChoice = this.findWinningChoice(ledLightInfo);
         const name = gc.Translator.gameTranslate(`glossary_${winChoice}`);
         this.result.string = name.toUpperCase();
@@ -42,7 +42,6 @@ export class CustomLedLightTooltip extends LedLightTooltip {
             const roundIdWidth = roundIdText.length * letterWidth;
             let backgroundWidth = (name?.length || 9) * letterWidth;
             backgroundWidth = backgroundWidth > roundIdWidth ? backgroundWidth : roundIdWidth;
-            console.log("backgroundHeight", backgroundWidth);
             backgroundTransform.width = backgroundWidth;
         }
 
