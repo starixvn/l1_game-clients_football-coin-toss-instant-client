@@ -26,6 +26,20 @@ type ResultSoundInfo = {
     soundId: string;
     duration: number;
 };
+
+interface FootballCoinTossRoundHistory {
+    result: {
+        home: boolean;
+        away: boolean;
+    };
+    settlementResult: {
+        home: boolean;
+        away: boolean;
+    };
+
+    roundId: string;
+}
+
 @ccclass
 @observer(settings.name)
 export default class Game extends GameComponent {

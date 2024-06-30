@@ -4,9 +4,13 @@ import Observer from "observer";
 
 import { GameServiceMessage } from "../game-messages";
 import { MatchConfigStore } from "../match-config/match-config-store";
+import gc from "@sg/game-client-base";
+import { settings } from "../game-settings";
 
 const { ccclass, property } = _decorator;
 const { render } = Observer;
+const { Rounds, RoundHistories } = gc;
+const { RoundTimeStore } = Rounds;
 
 @ccclass("CoinTossBetItem")
 export class CoinTossBetItem extends PFBetItem {
@@ -22,15 +26,49 @@ export class CoinTossBetItem extends PFBetItem {
     @property(Node)
     loseBg: Node = null;
 
+    private match: GameServiceMessage.MatchConfig;
+
     @render(MatchConfigStore, (store) => store.match, { fireImmediately: true })
     updateTeamName(match: GameServiceMessage.MatchConfig) {
         if (match.home && match.away) {
             const teamType = this.node.name;
             const teamCode = match[teamType];
-            this.lblTeamName.string = teamCode;
+            // const teamCode = match[this.node.name];
+            // this.lblTeamName.string = teamCode;
+            // this.loadFlag(teamCode);
             this.loadFlag(teamCode, teamType);
+            this.match = match;
         }
     }
+
+    @render(RoundHistories.RoundHistoryStore, (store) => store.firstJoinGameHistory)
+    async renderStaticResult(firstJoinGameHistory: gc.RoundHistories.IFirstJoinGameHistory) {
+        if (!firstJoinGameHistory) {
+            return;
+        }
+
+        const { animationHighlight, roundTime, roundHistory: lastRound } = firstJoinGameHistory;
+        if (lastRound && animationHighlight && roundTime > 0) {
+            console.log("display previous match", this.match, roundTime);
+        } else {
+            console.log("display current match", this.match, roundTime);
+        }
+    }
+
+    // @render(RoundTimeStore, (store) => store.countdownTimer)
+    // setTime(time: number) {
+    //     if(time <= settings)
+    // }
+
+    @render(RoundTimeStore, (store) => store.isStartPlacingBet, { fireImmediately: true })
+    receiveRoundTime(isStartPlacingBet) {
+        console.log("receiveRoundTime", isStartPlacingBet);
+    }
+
+    // @render(RoundTimeStore, (store) => store, { fireImmediately: true })
+    // startDisplayFlag(roundTime) {
+    //     console.log(roundTime);
+    // }
 
     public handleHighlightAnim(isActive: boolean) {
         this.loseBg.active = isActive;
