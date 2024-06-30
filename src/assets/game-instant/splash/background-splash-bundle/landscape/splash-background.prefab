@@ -83,8 +83,8 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": -20,
-      "y": 20,
+      "x": 0,
+      "y": 0,
       "z": 0
     },
     "_lrot": {
@@ -124,8 +124,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 634,
-      "height": 300
+      "width": 564,
+      "height": 330
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -136,7 +136,7 @@
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "2cWA3AkkJGj6WbKTX2PUDj"
+    "fileId": "56O4vBf+tLJJ3ZOE2AbKpu"
   },
   {
     "__type__": "cc.Sprite",
@@ -161,12 +161,12 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "563aaea0-e260-46e1-ab75-333993ca5e78@f9941",
+      "__uuid__": "5991bce7-2508-4f0c-998b-76d60721974d@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 2,
+    "_sizeMode": 1,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -174,14 +174,14 @@
     },
     "_fillStart": 0,
     "_fillRange": 0,
-    "_isTrimmedMode": false,
+    "_isTrimmedMode": true,
     "_useGrayscale": false,
     "_atlas": null,
     "_id": ""
   },
   {
     "__type__": "cc.CompPrefabInfo",
-    "fileId": "7fnxJzPflF3L1hEmpnYIMO"
+    "fileId": "36nSbHWz5BI5XH2ROYJxJT"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -191,7 +191,7 @@
     "asset": {
       "__id__": 0
     },
-    "fileId": "c2IUQ6+xlKk6nVA5trwmVn",
+    "fileId": "61TWYy6EZFmp9o2pZ8H4at",
     "instance": null,
     "targetOverrides": null,
     "nestedPrefabInstanceRoots": null
