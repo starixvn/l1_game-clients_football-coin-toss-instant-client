@@ -1,7 +1,9 @@
 import gc from "@sg/game-client-base";
-import { Color, _decorator, Node, v3, UITransform, CCFloat } from "cc";
+import { _decorator, CCFloat, Color, Node, UITransform, v3 } from "cc";
 import { LedLightTooltip } from "db://shared-components/game/led-light/scripts/components/led-light-tooltip";
+
 import { BetChoice } from "../coin-toss-choices";
+
 const { ccclass, property } = _decorator;
 
 export enum TipAlignment {
@@ -11,8 +13,8 @@ export enum TipAlignment {
 }
 
 enum ColorResult {
-    head = "#0535b3",
-    tail = "#d5301a",
+    home = "#0535b3",
+    away = "#d5301a",
 }
 @ccclass("CustomLedLightTooltip")
 export class CustomLedLightTooltip extends LedLightTooltip {
