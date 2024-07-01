@@ -76,14 +76,14 @@ export default class Game extends GameComponent {
     onLoad() {
         super.onLoad();
         this.fetchComponents();
-        this.winningResult.hideQuickly();
-        this.flipCoin.init();
+        this.winningResult?.hideQuickly();
+        this.flipCoin?.init();
     }
 
     fetchComponents() {
-        this.winningResult = this.winningResultNode.getComponent(CoinTossWinningResult);
-        this.flipCoin = this.flipCoinNode.getComponent(FlipCoin);
-        this.highlightResult = this.highlightResultNode.getComponent(HighlightResult);
+        this.winningResult = this.winningResultNode?.getComponent(CoinTossWinningResult);
+        this.flipCoin = this.flipCoinNode?.getComponent(FlipCoin);
+        this.highlightResult = this.highlightResultNode?.getComponent(HighlightResult);
     }
 
     @render(Rounds.RoundStore, (store) => store.clientRoundId)
@@ -189,24 +189,32 @@ export default class Game extends GameComponent {
     }
 
     async loadResourcesAnim(resourcePath: string) {
+        const defaultPath = "animations/default/toss/coin_toss";
+        const customPath = `animations/${resourcePath}/toss/coin_toss`;
+
         try {
-            const skeletonData = (await bundleManager.loadAssetsFromBundle(
-                "resources",
-                `animations/${resourcePath}/toss/coin_toss`,
-                sp.SkeletonData,
-                null
-            )) as sp.SkeletonData;
-
-            if (!skeletonData) {
-                return;
-            }
-
-            this.flipCoin?.setSkeletonData(skeletonData);
-            this.winningResult?.setSkeletonData(skeletonData);
+            const skeletonData = await this.loadSkeletonData(customPath);
+            skeletonData && this.updateSkeletonData(skeletonData);
         } catch (error) {
-            log("loadResourcesAnim error", error.message);
+            log("Not found skeleton data into path: ", resourcePath, error.message);
+            const skeletonData = await this.loadSkeletonData(defaultPath);
+            skeletonData && this.updateSkeletonData(skeletonData);
+        }
+    }
 
+    private async loadSkeletonData(path: string): Promise<sp.SkeletonData | null> {
+        try {
+            const skeletonData = (await bundleManager?.loadAssetsFromBundle("resources", path, sp.SkeletonData, null)) as sp.SkeletonData;
+
+            return skeletonData || null;
+        } catch (error) {
+            log("Failed to load skeleton data from path: ", path, error.message);
             return null;
         }
+    }
+
+    private updateSkeletonData(skeletonData: sp.SkeletonData) {
+        this.flipCoin?.setSkeletonData(skeletonData);
+        this.winningResult?.setSkeletonData(skeletonData);
     }
 }
