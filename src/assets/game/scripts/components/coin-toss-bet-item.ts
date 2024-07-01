@@ -51,10 +51,8 @@ export class CoinTossBetItem extends PFBetItem {
 
         const { animationHighlight, roundTime, roundHistory: lastRound } = firstJoinGameHistory;
         if (lastRound && animationHighlight && roundTime > 0) {
-            console.log("display previous match", this.lastMatch.home, this.lastMatch.away, this.lastMatch.roundId, roundTime);
             this.setTeam(this.lastMatch);
         } else {
-            console.log("display current match", this.match.home, this.match.away, roundTime);
             this.setTeam(this.match);
         }
     }

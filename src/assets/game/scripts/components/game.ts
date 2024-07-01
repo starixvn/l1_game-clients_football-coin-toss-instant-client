@@ -21,24 +21,12 @@ startGame(settings.name, containerOptions, siteConfigs);
 
 const { ccclass, property } = _decorator;
 const { observer, render } = Observer;
+const { RoundTimeStore } = Rounds;
 
 type ResultSoundInfo = {
     soundId: string;
     duration: number;
 };
-
-interface FootballCoinTossRoundHistory {
-    result: {
-        home: boolean;
-        away: boolean;
-    };
-    settlementResult: {
-        home: boolean;
-        away: boolean;
-    };
-
-    roundId: string;
-}
 
 @ccclass
 @observer(settings.name)
@@ -72,6 +60,9 @@ export default class Game extends GameComponent {
     protected clientRoundId = -1;
     protected resultSoundIds: ResultSoundInfo[] = [];
     enableFixHandleFinish = true;
+
+    private match: GameServiceMessage.MatchConfig;
+    private lastMatch: GameServiceMessage.LastMatchConfig;
 
     onLoad() {
         super.onLoad();
@@ -166,6 +157,21 @@ export default class Game extends GameComponent {
         this.isLoading = isLoading;
     }
 
+    @render(MatchConfigStore, (store) => store.match, { fireImmediately: true })
+    updateMatch(match: GameServiceMessage.MatchConfig) {
+        if (match.home && match.away) {
+            this.match = match;
+            console.log("updateMatch", match);
+        }
+    }
+
+    @render(MatchConfigStore, (store) => store.lastMatch, { fireImmediately: false })
+    updateLastMatch(lastMatch: GameServiceMessage.LastMatchConfig) {
+        if (lastMatch.home && lastMatch.away) {
+            this.lastMatch = lastMatch;
+        }
+    }
+
     @render(RoundHistories.RoundHistoryStore, (store) => store.firstJoinGameHistory)
     async renderStaticResult(firstJoinGameHistory: gc.RoundHistories.IFirstJoinGameHistory) {
         if (!firstJoinGameHistory) {
@@ -177,12 +183,25 @@ export default class Game extends GameComponent {
             const { result } = lastRound;
             this.flipCoin.setStatusNode(false);
             this.highlightResult.show(result);
+
+            console.log("display previous match", this.lastMatch.home, this.lastMatch.away, this.lastMatch.roundId, roundTime);
+            this.updateTeamName(this.lastMatch);
+        } else {
+            console.log("display current match", this.match.home, this.match.away, roundTime);
+            this.updateTeamName(this.match);
         }
     }
 
-    @render(MatchConfigStore, (store) => store.match, { fireImmediately: true })
+    @render(RoundTimeStore, (store) => store.isStartRound, { fireImmediately: true })
+    receiveRoundTime(isStartRound) {
+        if (isStartRound) {
+            this.updateTeamName(this.match);
+        }
+    }
+
     async updateTeamName(match: GameServiceMessage.MatchConfig) {
         if (match?.home && match?.away) {
+            console.log("updateTeamName", match);
             const resourcePath = match?.home.toUpperCase() || "default";
             await this.loadResourcesAnim(resourcePath);
         }
