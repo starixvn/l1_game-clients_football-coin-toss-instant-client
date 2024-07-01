@@ -151,7 +151,8 @@ export default class Game extends GameComponent {
             return;
         }
 
-        const winOptionName = this.winningSounds[result];
+        const winOptionName = this.match ? this.match[result]?.toLowerCase() : this.winningSounds[result];
+
         const soundId = this.getAudioKeyForLanguage(winOptionName);
         if (soundId) {
             const duration = (await AudioUtils.getDurationClip(soundId)) - 0.4; // reduce duration of winning sound
