@@ -740,8 +740,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 18.11481483068593,
-      "height": 50.4
+      "width": 18.113778076171876,
+      "height": 50.400000000000006
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -779,7 +779,7 @@
     "_string": "%",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 25.960591133004925,
+    "_actualFontSize": 25.862068965517242,
     "_fontSize": 20,
     "_fontFamily": "Arial",
     "_lineHeight": 40,
@@ -1050,9 +1050,9 @@
     "_dstBlendFactor": 4,
     "_color": {
       "__type__": "cc.Color",
-      "r": 175,
-      "g": 4,
-      "b": 11,
+      "r": 255,
+      "g": 255,
+      "b": 0,
       "a": 255
     },
     "_string": "",
@@ -1095,7 +1095,6 @@
     },
     "overrideFonts": [],
     "enableCacheMode": false,
-    "isHideBeforeLoadFont": false,
     "_id": ""
   },
   {
