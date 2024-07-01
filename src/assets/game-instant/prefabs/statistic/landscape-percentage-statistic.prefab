@@ -1,7 +1,7 @@
 [
   {
     "__type__": "cc.Prefab",
-    "_name": "percentage-statistic",
+    "_name": "landscape-percentage-statistic",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_native": "",
@@ -13,7 +13,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "percentage-statistic",
+    "_name": "landscape-percentage-statistic",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": null,
@@ -193,7 +193,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 115.59206276589089,
+      "width": 154.11406444286084,
       "height": 98.28
     },
     "_anchorPoint": {
@@ -232,8 +232,8 @@
     "_string": "HOME",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 44.29064039408867,
-    "_fontSize": 36,
+    "_actualFontSize": 59.05418719211823,
+    "_fontSize": 48,
     "_fontFamily": "Arial",
     "_lineHeight": 78,
     "_overflow": 0,
@@ -372,8 +372,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 20.126654669806523,
-      "height": 90.72
+      "width": 26.83403471831206,
+      "height": 90.72000000000001
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -411,8 +411,8 @@
     "_string": "0",
     "_horizontalAlign": 0,
     "_verticalAlign": 1,
-    "_actualFontSize": 44.29064039408867,
-    "_fontSize": 36,
+    "_actualFontSize": 59.05418719211823,
+    "_fontSize": 48,
     "_fontFamily": "Arial",
     "_lineHeight": 72,
     "_overflow": 0,
@@ -484,8 +484,6 @@
       "__id__": 0
     },
     "fileId": "4dLk+cXwdOyrltlUknJGnd",
-    "instance": null,
-    "targetOverrides": null,
     "nestedPrefabInstanceRoots": null
   },
   {
@@ -515,7 +513,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 71,
+      "x": 120,
       "y": -2,
       "z": 0
     },
@@ -612,7 +610,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 110.37138750078203,
+      "width": 147.15361058079563,
       "height": 98.28
     },
     "_anchorPoint": {
@@ -651,8 +649,8 @@
     "_string": "AWAY",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 44.29064039408867,
-    "_fontSize": 36,
+    "_actualFontSize": 59.05418719211823,
+    "_fontSize": 48,
     "_fontFamily": "Arial",
     "_lineHeight": 78,
     "_overflow": 0,
@@ -791,8 +789,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 20.126654669806523,
-      "height": 90.72
+      "width": 26.83403471831206,
+      "height": 90.72000000000001
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -830,8 +828,8 @@
     "_string": "0",
     "_horizontalAlign": 0,
     "_verticalAlign": 1,
-    "_actualFontSize": 44.29064039408867,
-    "_fontSize": 36,
+    "_actualFontSize": 59.05418719211823,
+    "_fontSize": 48,
     "_fontFamily": "Arial",
     "_lineHeight": 72,
     "_overflow": 0,
@@ -903,8 +901,6 @@
       "__id__": 0
     },
     "fileId": "d9CFH32xhGBJWpgTEHdFdi",
-    "instance": null,
-    "targetOverrides": null,
     "nestedPrefabInstanceRoots": null
   },
   {

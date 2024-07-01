@@ -2,12 +2,12 @@
   "ver": "1.1.45",
   "importer": "prefab",
   "imported": true,
-  "uuid": "dd0ddcf7-9034-4dd9-bec4-70b1518d65d3",
+  "uuid": "462afb9a-b1bd-4947-9a8a-83a2d34250ba",
   "files": [
     ".json"
   ],
   "subMetas": {},
   "userData": {
-    "syncNodeName": "percentage-statistic"
+    "syncNodeName": "landscape-percentage-statistic"
   }
 }
