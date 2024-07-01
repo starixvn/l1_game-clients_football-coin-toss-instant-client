@@ -28,7 +28,7 @@ type ResultSoundInfo = {
     duration: number;
 };
 
-export const PATH_ANIM_COIN_DEFAULT = "HOME";
+export const HOME_NAME = "HOME";
 
 @ccclass
 @observer(settings.name)
@@ -59,6 +59,7 @@ export default class Game extends GameComponent {
     private readonly winningSounds = { home: "home", away: "away" };
     private readonly winningMusic = { home: "home_music", away: "home_music" };
     private readonly crowdSounds = "crowd-game";
+    private readonly pathAnimTossDefault = `animations/${HOME_NAME}/toss/coin_toss`;
 
     protected clientRoundId = -1;
     protected resultSoundIds: ResultSoundInfo[] = [];
@@ -196,13 +197,12 @@ export default class Game extends GameComponent {
     async loadMatchSkeleton(match: GameServiceMessage.MatchConfig) {
         if (match?.home && match?.away) {
             console.log("updateTeamName", `${match.home}-${match.away}`);
-            const resourcePath = match?.home.toUpperCase() || PATH_ANIM_COIN_DEFAULT;
+            const resourcePath = match?.home.toUpperCase() || HOME_NAME;
             await this.loadResourcesAnim(resourcePath);
         }
     }
 
     async loadResourcesAnim(resourcePath: string) {
-        const defaultPath = `animations/${PATH_ANIM_COIN_DEFAULT}/toss/coin_toss`;
         const customPath = `animations/${resourcePath}/toss/coin_toss`;
 
         try {
@@ -210,7 +210,7 @@ export default class Game extends GameComponent {
             skeletonData && this.updateSkeletonData(skeletonData);
         } catch (error) {
             log("Not found skeleton data into path: ", resourcePath, error.message);
-            const skeletonData = await this.loadSkeletonData(defaultPath);
+            const skeletonData = await this.loadSkeletonData(this.pathAnimTossDefault);
             skeletonData && this.updateSkeletonData(skeletonData);
         }
     }
@@ -219,7 +219,9 @@ export default class Game extends GameComponent {
         try {
             const skeletonData = (await bundleManager?.loadAssetsFromBundle("resources", path, sp.SkeletonData, null)) as sp.SkeletonData;
 
-            return skeletonData ?? null;
+            return (
+                skeletonData ?? (await bundleManager?.loadAssetsFromBundle("resources", this.pathAnimTossDefault, sp.SkeletonData, null))
+            );
         } catch (error) {
             log("Failed to load skeleton data from path: ", path, error.message);
             return null;
