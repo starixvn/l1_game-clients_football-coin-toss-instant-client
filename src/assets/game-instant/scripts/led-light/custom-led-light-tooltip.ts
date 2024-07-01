@@ -38,7 +38,7 @@ export class CustomLedLightTooltip extends LedLightTooltip {
 
         const backgroundTransform = this.background.getComponent(UITransform);
         if (backgroundTransform) {
-            const letterWidth = 17;
+            const letterWidth = 18;
             const roundIdWidth = roundIdText.length * letterWidth;
             let backgroundWidth = (name?.length || 9) * letterWidth;
             backgroundWidth = backgroundWidth > roundIdWidth ? backgroundWidth : roundIdWidth;
