@@ -56,9 +56,9 @@ export class CoinTossBetItem extends PFBetItem {
         }
     }
 
-    @render(RoundTimeStore, (store) => store.isStartPlacingBet, { fireImmediately: true })
-    receiveRoundTime(isStartPlacingBet) {
-        if (isStartPlacingBet) {
+    @render(RoundTimeStore, (store) => store.isStartRound, { fireImmediately: true })
+    receiveRoundTime(isStartRound: boolean) {
+        if (isStartRound) {
             this.setTeam(this.match);
         }
     }
