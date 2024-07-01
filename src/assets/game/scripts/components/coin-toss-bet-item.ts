@@ -65,10 +65,12 @@ export class CoinTossBetItem extends PFBetItem {
     }
 
     private setTeam(match: GameServiceMessage.MatchConfig) {
-        const teamType = this.node.name;
-        const teamCode = match[teamType];
-        this.lblTeamName.string = teamCode;
-        this.loadFlag(teamCode, teamType);
+        if (match?.home && match?.away) {
+            const teamType = this.node.name;
+            const teamCode = match[teamType];
+            this.lblTeamName.string = teamCode;
+            this.loadFlag(teamCode, teamType);
+        }
     }
 
     public handleHighlightAnim(isActive: boolean) {
