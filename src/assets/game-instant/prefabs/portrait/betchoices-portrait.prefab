@@ -1170,7 +1170,7 @@
     "_overflow": 0,
     "_enableWrapText": true,
     "_font": null,
-    "_isSystemFontUsed": false,
+    "_isSystemFontUsed": true,
     "_spacingX": 0,
     "_isItalic": false,
     "_isBold": false,
@@ -1223,6 +1223,7 @@
     },
     "overrideFonts": [],
     "enableCacheMode": false,
+    "isHideBeforeLoadFont": true,
     "_id": ""
   },
   {
@@ -3514,7 +3515,7 @@
     "_overflow": 0,
     "_enableWrapText": true,
     "_font": null,
-    "_isSystemFontUsed": false,
+    "_isSystemFontUsed": true,
     "_spacingX": 0,
     "_isItalic": false,
     "_isBold": false,
@@ -3567,6 +3568,7 @@
     },
     "overrideFonts": [],
     "enableCacheMode": false,
+    "isHideBeforeLoadFont": true,
     "_id": ""
   },
   {

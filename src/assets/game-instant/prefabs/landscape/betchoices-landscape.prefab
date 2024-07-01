@@ -1223,6 +1223,7 @@
     },
     "overrideFonts": [],
     "enableCacheMode": false,
+    "isHideBeforeLoadFont": true,
     "_id": ""
   },
   {
@@ -3561,6 +3562,7 @@
     },
     "overrideFonts": [],
     "enableCacheMode": false,
+    "isHideBeforeLoadFont": true,
     "_id": ""
   },
   {
