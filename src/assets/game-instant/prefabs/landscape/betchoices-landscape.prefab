@@ -1169,8 +1169,11 @@
     "_lineHeight": 40,
     "_overflow": 0,
     "_enableWrapText": true,
-    "_font": null,
-    "_isSystemFontUsed": true,
+    "_font": {
+      "__uuid__": "41a12541-a4db-4259-b803-4c477054c858",
+      "__expectedType__": "cc.TTFFont"
+    },
+    "_isSystemFontUsed": false,
     "_spacingX": 0,
     "_isItalic": false,
     "_isBold": false,
@@ -1223,7 +1226,6 @@
     },
     "overrideFonts": [],
     "enableCacheMode": false,
-    "isHideBeforeLoadFont": true,
     "_id": ""
   },
   {
@@ -3508,8 +3510,11 @@
     "_lineHeight": 40,
     "_overflow": 0,
     "_enableWrapText": true,
-    "_font": null,
-    "_isSystemFontUsed": true,
+    "_font": {
+      "__uuid__": "41a12541-a4db-4259-b803-4c477054c858",
+      "__expectedType__": "cc.TTFFont"
+    },
+    "_isSystemFontUsed": false,
     "_spacingX": 0,
     "_isItalic": false,
     "_isBold": false,
@@ -3562,7 +3567,6 @@
     },
     "overrideFonts": [],
     "enableCacheMode": false,
-    "isHideBeforeLoadFont": true,
     "_id": ""
   },
   {
