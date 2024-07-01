@@ -99,7 +99,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": 7.314,
+      "y": 0,
       "z": 0
     },
     "_lrot": {
@@ -565,7 +565,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 44.524840454557044,
+      "width": 44.51599792827918,
       "height": 50.4
     },
     "_anchorPoint": {
@@ -604,7 +604,7 @@
     "_string": "68%",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 28.7609756097561,
+    "_actualFontSize": 28.556650246305416,
     "_fontSize": 22,
     "_fontFamily": "Arial",
     "_lineHeight": 40,
