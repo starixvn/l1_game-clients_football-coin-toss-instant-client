@@ -186,9 +186,9 @@ export default class Game extends GameComponent {
             this.flipCoin?.setStatusNode(false);
             this.highlightResult?.show(result);
 
-            console.log("display previous match", this.lastMatch.home, this.lastMatch.away, this.lastMatch.roundId, roundTime);
+            console.log("display previous match", this.lastMatch?.home, this.lastMatch?.away, this.lastMatch?.roundId, roundTime);
         } else {
-            console.log("display current match", this.match.home, this.match.away, roundTime);
+            console.log("display current match", this.match?.home, this.match?.away, roundTime);
         }
     }
 
