@@ -1,6 +1,4 @@
 .splash-container .bg_no_translate {
-    top: -2.8vh !important;
-    left: -20px;
     background-image: url("./landscape_game_background.webp?v=1") !important;
 }
 
@@ -10,5 +8,4 @@
         left: 0px !important;
         top: -1vh !important;
     }
-    
 }
