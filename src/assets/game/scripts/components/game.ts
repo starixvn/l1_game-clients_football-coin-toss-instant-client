@@ -56,6 +56,7 @@ export default class Game extends GameComponent {
 
     private readonly winningSounds = { home: "home", away: "away" };
     private readonly winningMusic = { home: "home_music", away: "home_music" };
+    private readonly crowdSounds = "crowd-game";
 
     protected clientRoundId = -1;
     protected resultSoundIds: ResultSoundInfo[] = [];
@@ -106,6 +107,11 @@ export default class Game extends GameComponent {
         }
     }
 
+    @render(Rounds.RoundTimeStore, (store) => store.isStartPlacingBet)
+    startPlacingBet(isStartPlacingBet: boolean) {
+        this.playSound(this.crowdSounds);
+    }
+
     async playWinningSound() {
         for (const resultSoundInfo of this.resultSoundIds) {
             this.playSound(resultSoundInfo.soundId);
@@ -129,7 +135,7 @@ export default class Game extends GameComponent {
         const winOptionName = this.winningSounds[result];
         const soundId = this.getAudioKeyForLanguage(winOptionName);
         if (soundId) {
-            const duration = await AudioUtils.getDurationClip(soundId);
+            const duration = (await AudioUtils.getDurationClip(soundId)) - 0.4; // reduce duration of winning sound
 
             this.resultSoundIds.push({ soundId, duration });
         }
