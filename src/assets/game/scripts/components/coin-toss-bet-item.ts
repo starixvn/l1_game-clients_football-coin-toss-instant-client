@@ -28,7 +28,6 @@ export class CoinTossBetItem extends PFBetItem {
 
     private match: GameServiceMessage.MatchConfig;
     private lastMatch: GameServiceMessage.LastMatchConfig;
-    private isFirstJoin: false;
 
     @render(MatchConfigStore, (store) => store.match, { fireImmediately: true })
     updateTeamName(match: GameServiceMessage.MatchConfig) {

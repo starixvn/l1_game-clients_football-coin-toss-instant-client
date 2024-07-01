@@ -21,8 +21,8 @@ export class MatchConfigHandler implements IMultipleHandlers {
         if (roundHistories && roundHistories.length > 0) {
             const parsedMatch = (roundHistories[0] as any).match;
             const lastMatch = {
-                home: `${parsedMatch.home}-1`,
-                away: `${parsedMatch.away}-1`,
+                home: parsedMatch.home,
+                away: parsedMatch.away,
                 roundId: roundHistories[0].roundId,
             };
             this.matchConfigStore.lastMatch = lastMatch;
