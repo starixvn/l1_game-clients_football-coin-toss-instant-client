@@ -40,5 +40,8 @@
     },
     "away_zh_tw": {
         "bundle": "resources"
+    },
+    "starting-round": {
+        "bundle": "resources"
     }
 }

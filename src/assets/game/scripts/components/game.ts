@@ -67,7 +67,7 @@ export default class Game extends GameComponent {
     isLoading = true;
 
     private readonly winningSounds = { home: "home", away: "away" };
-    private readonly winningMusic = { home: "home_music", away: "away_music" };
+    private readonly winningMusic = { home: "home_music", away: "home_music" };
 
     protected clientRoundId = -1;
     protected resultSoundIds: ResultSoundInfo[] = [];
