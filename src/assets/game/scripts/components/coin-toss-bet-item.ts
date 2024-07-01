@@ -1,11 +1,10 @@
+import gc from "@sg/game-client-base";
 import { _decorator, Label, Node, Sprite, SpriteAtlas, UIOpacity } from "cc";
 import { PFBetItem } from "db://shared-components/provably-fair/round-base/scripts/pf-bet-item";
 import Observer from "observer";
 
 import { GameServiceMessage } from "../game-messages";
 import { MatchConfigStore } from "../match-config/match-config-store";
-import gc from "@sg/game-client-base";
-import { settings } from "../game-settings";
 
 const { ccclass, property } = _decorator;
 const { render } = Observer;
@@ -68,7 +67,8 @@ export class CoinTossBetItem extends PFBetItem {
         if (match?.home && match?.away) {
             const teamType = this.node.name;
             const teamCode = match[teamType];
-            this.lblTeamName.string = teamCode;
+            const teamTypeText = gc.Translator.gameTranslate(`glossary_${teamType}`);
+            this.lblTeamName.string = teamType !== teamCode ? `${teamCode.toUpperCase()} - ${teamTypeText.toUpperCase()}` : "";
             this.loadFlag(teamCode, teamType);
         }
     }
