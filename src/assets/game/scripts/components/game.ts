@@ -28,6 +28,8 @@ type ResultSoundInfo = {
     duration: number;
 };
 
+export const PATH_ANIM_COIN_DEFAULT = "HOME";
+
 @ccclass
 @observer(settings.name)
 export default class Game extends GameComponent {
@@ -167,14 +169,8 @@ export default class Game extends GameComponent {
     updateMatch(match: GameServiceMessage.MatchConfig) {
         if (match.home && match.away) {
             this.match = match;
+            this.updateTeamName(this.match);
             console.log("updateMatch", match);
-        }
-    }
-
-    @render(MatchConfigStore, (store) => store.lastMatch, { fireImmediately: false })
-    updateLastMatch(lastMatch: GameServiceMessage.LastMatchConfig) {
-        if (lastMatch.home && lastMatch.away) {
-            this.lastMatch = lastMatch;
         }
     }
 
@@ -187,19 +183,17 @@ export default class Game extends GameComponent {
         const { animationHighlight, roundTime, roundHistory: lastRound } = firstJoinGameHistory;
         if (lastRound && animationHighlight && roundTime > 0) {
             const { result } = lastRound;
-            this.flipCoin.setStatusNode(false);
-            this.highlightResult.show(result);
+            this.flipCoin?.setStatusNode(false);
+            this.highlightResult?.show(result);
 
             console.log("display previous match", this.lastMatch.home, this.lastMatch.away, this.lastMatch.roundId, roundTime);
-            this.updateTeamName(this.lastMatch);
         } else {
             console.log("display current match", this.match.home, this.match.away, roundTime);
-            this.updateTeamName(this.match);
         }
     }
 
     @render(RoundTimeStore, (store) => store.isStartRound, { fireImmediately: true })
-    receiveRoundTime(isStartRound) {
+    receiveRoundTime(isStartRound: boolean) {
         if (isStartRound) {
             this.updateTeamName(this.match);
         }
@@ -208,13 +202,13 @@ export default class Game extends GameComponent {
     async updateTeamName(match: GameServiceMessage.MatchConfig) {
         if (match?.home && match?.away) {
             console.log("updateTeamName", match);
-            const resourcePath = match?.home.toUpperCase() || "default";
+            const resourcePath = match?.home.toUpperCase() || PATH_ANIM_COIN_DEFAULT;
             await this.loadResourcesAnim(resourcePath);
         }
     }
 
     async loadResourcesAnim(resourcePath: string) {
-        const defaultPath = "animations/default/toss/coin_toss";
+        const defaultPath = `animations/${PATH_ANIM_COIN_DEFAULT}/toss/coin_toss`;
         const customPath = `animations/${resourcePath}/toss/coin_toss`;
 
         try {
