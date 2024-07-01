@@ -25,11 +25,11 @@
     "_active": true,
     "_components": [
       {
-        "__id__": 8
+        "__id__": 10
       }
     ],
     "_prefab": {
-      "__id__": 10
+      "__id__": 12
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -76,10 +76,13 @@
       },
       {
         "__id__": 5
+      },
+      {
+        "__id__": 7
       }
     ],
     "_prefab": {
-      "__id__": 7
+      "__id__": 9
     },
     "_lpos": {
       "__type__": "cc.Vec3",
@@ -124,8 +127,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 564,
-      "height": 330
+      "width": 813,
+      "height": 451
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -161,12 +164,12 @@
       "a": 255
     },
     "_spriteFrame": {
-      "__uuid__": "5991bce7-2508-4f0c-998b-76d60721974d@f9941",
+      "__uuid__": "1d0971dc-7c87-4f5b-a110-59ab6d5d2b1b@f9941",
       "__expectedType__": "cc.SpriteFrame"
     },
     "_type": 0,
     "_fillType": 0,
-    "_sizeMode": 1,
+    "_sizeMode": 2,
     "_fillCenter": {
       "__type__": "cc.Vec2",
       "x": 0,
@@ -182,6 +185,42 @@
   {
     "__type__": "cc.CompPrefabInfo",
     "fileId": "36nSbHWz5BI5XH2ROYJxJT"
+  },
+  {
+    "__type__": "cc.Widget",
+    "_name": "",
+    "_objFlags": 0,
+    "__editorExtras__": {},
+    "node": {
+      "__id__": 2
+    },
+    "_enabled": true,
+    "__prefab": {
+      "__id__": 8
+    },
+    "_alignFlags": 18,
+    "_target": null,
+    "_left": 0,
+    "_right": 0,
+    "_top": 0,
+    "_bottom": 0,
+    "_horizontalCenter": 0,
+    "_verticalCenter": 0,
+    "_isAbsLeft": true,
+    "_isAbsRight": true,
+    "_isAbsTop": true,
+    "_isAbsBottom": true,
+    "_isAbsHorizontalCenter": true,
+    "_isAbsVerticalCenter": true,
+    "_originalWidth": 0,
+    "_originalHeight": 0,
+    "_alignMode": 2,
+    "_lockFlags": 0,
+    "_id": ""
+  },
+  {
+    "__type__": "cc.CompPrefabInfo",
+    "fileId": "7co5fbJANCi7PYH5Kt8Rdy"
   },
   {
     "__type__": "cc.PrefabInfo",
@@ -206,7 +245,7 @@
     },
     "_enabled": true,
     "__prefab": {
-      "__id__": 9
+      "__id__": 11
     },
     "_contentSize": {
       "__type__": "cc.Size",
