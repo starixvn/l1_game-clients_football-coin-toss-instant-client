@@ -65,7 +65,7 @@ export default class Game extends GameComponent {
     enableFixHandleFinish = true;
 
     private match: GameServiceMessage.MatchConfig;
-    private lastMatch: GameServiceMessage.LastMatchConfig;
+    private nextMatchSkeleton: sp.SkeletonData;
 
     onLoad() {
         super.onLoad();
@@ -153,9 +153,14 @@ export default class Game extends GameComponent {
     async handleStartRound(isStartRound: boolean) {
         if (isStartRound) {
             super.handleStartRound(isStartRound);
-            this.winningResult.hideQuickly();
-            this.flipCoin.playAnim();
-            this.highlightResult.hide();
+            this.winningResult?.hideQuickly();
+            if (this.nextMatchSkeleton) {
+                this.flipCoin?.setSkeletonData(this.nextMatchSkeleton);
+                this.flipCoin?.playAnim();
+                this.winningResult?.setSkeletonData(this.nextMatchSkeleton);
+            }
+
+            this.highlightResult?.hide();
             this.resultSoundIds = [];
         }
     }
@@ -168,9 +173,9 @@ export default class Game extends GameComponent {
     @render(MatchConfigStore, (store) => store.match, { fireImmediately: true })
     updateMatch(match: GameServiceMessage.MatchConfig) {
         if (match.home && match.away) {
+            console.log("updateMatch", `${match.home}-${match.away}`);
             this.match = match;
-            this.updateTeamName(this.match);
-            console.log("updateMatch", match);
+            this.loadMatchSkeleton(this.match);
         }
     }
 
@@ -185,23 +190,12 @@ export default class Game extends GameComponent {
             const { result } = lastRound;
             this.flipCoin?.setStatusNode(false);
             this.highlightResult?.show(result);
-
-            console.log("display previous match", this.lastMatch?.home, this.lastMatch?.away, this.lastMatch?.roundId, roundTime);
-        } else {
-            console.log("display current match", this.match?.home, this.match?.away, roundTime);
         }
     }
 
-    @render(RoundTimeStore, (store) => store.isStartRound, { fireImmediately: true })
-    receiveRoundTime(isStartRound: boolean) {
-        if (isStartRound) {
-            this.updateTeamName(this.match);
-        }
-    }
-
-    async updateTeamName(match: GameServiceMessage.MatchConfig) {
+    async loadMatchSkeleton(match: GameServiceMessage.MatchConfig) {
         if (match?.home && match?.away) {
-            console.log("updateTeamName", match);
+            console.log("updateTeamName", `${match.home}-${match.away}`);
             const resourcePath = match?.home.toUpperCase() || PATH_ANIM_COIN_DEFAULT;
             await this.loadResourcesAnim(resourcePath);
         }
@@ -225,7 +219,7 @@ export default class Game extends GameComponent {
         try {
             const skeletonData = (await bundleManager?.loadAssetsFromBundle("resources", path, sp.SkeletonData, null)) as sp.SkeletonData;
 
-            return skeletonData || null;
+            return skeletonData ?? null;
         } catch (error) {
             log("Failed to load skeleton data from path: ", path, error.message);
             return null;
@@ -233,7 +227,13 @@ export default class Game extends GameComponent {
     }
 
     private updateSkeletonData(skeletonData: sp.SkeletonData) {
-        this.flipCoin?.setSkeletonData(skeletonData);
-        this.winningResult?.setSkeletonData(skeletonData);
+        if (!this.nextMatchSkeleton) {
+            this.winningResult.setSkeletonData(skeletonData);
+            this.flipCoin.setSkeletonData(skeletonData);
+        }
+
+        if (skeletonData) {
+            this.nextMatchSkeleton = skeletonData;
+        }
     }
 }
