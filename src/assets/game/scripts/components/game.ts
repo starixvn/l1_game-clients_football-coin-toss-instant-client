@@ -15,12 +15,12 @@ import { CoinTossWinningResult } from "./coin-toss-winning-result";
 import { FlipCoin } from "./flip-coin";
 import { HighlightResult } from "./highlight-result";
 
-const { Rounds, Translator, RoundHistories } = gc;
+const { Rounds, Translator, RoundHistories, UserSettings } = gc;
 
 startGame(settings.name, containerOptions, siteConfigs);
 
 const { ccclass, property } = _decorator;
-const { observer, render } = Observer;
+const { observer, render, handle } = Observer;
 
 type ResultSoundInfo = {
     soundId: string;
@@ -111,13 +111,30 @@ export default class Game extends GameComponent {
 
     @render(Rounds.RoundTimeStore, (store) => store.isStartPlacingBet)
     startPlacingBet(isStartPlacingBet: boolean) {
-        this.playSound(this.crowdSounds);
+        this.playStoppableSFX(this.crowdSounds);
     }
 
     async playWinningSound() {
         for (const resultSoundInfo of this.resultSoundIds) {
             this.playSound(resultSoundInfo.soundId);
             await FunctionUtils.delay(resultSoundInfo.duration * 1000);
+        }
+    }
+
+    @handle(gc.Audios.AudioHandler, (handle, id: string) => handle.stopStoppableSFX(id))
+    stopStoppableSFX(id: string) {
+        return id;
+    }
+
+    @handle(gc.Audios.AudioHandler, (handle, id: string) => handle.playStoppableSFX(id))
+    playStoppableSFX(id: string) {
+        return id;
+    }
+
+    @render(UserSettings.UserSettingStore, (store) => store.sfxEnable)
+    enableSFX(sfxEnable: boolean) {
+        if (!sfxEnable) {
+            this.stopStoppableSFX(this.crowdSounds);
         }
     }
 
