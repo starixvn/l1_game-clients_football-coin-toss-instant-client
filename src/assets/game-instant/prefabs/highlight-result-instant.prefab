@@ -71,7 +71,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "biden",
+    "_name": "home",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -262,7 +262,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "biden",
+    "_name": "home",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -283,7 +283,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 0,
+      "x": -51.9,
       "y": 0,
       "z": 0
     },
@@ -324,13 +324,13 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 281.79998779296875,
-      "height": 352.1600036621094
+      "width": 812,
+      "height": 497
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
+      "x": 0.1933497536945813,
+      "y": 0.6526357854156187
     },
     "_id": ""
   },
@@ -361,16 +361,16 @@
       "a": 255
     },
     "_skeletonData": {
-      "__uuid__": "519c6fc4-1e69-453e-b8dd-c5c9ac73d691",
+      "__uuid__": "691335c1-81b2-458b-9a55-e502f593162a",
       "__expectedType__": "sp.SkeletonData"
     },
     "defaultSkin": "default",
-    "defaultAnimation": "Biden",
+    "defaultAnimation": "blue-player",
     "_premultipliedAlpha": false,
     "_timeScale": 1,
-    "_preCacheMode": 0,
-    "_cacheMode": 0,
-    "_defaultCacheMode": 0,
+    "_preCacheMode": 1,
+    "_cacheMode": 1,
+    "_defaultCacheMode": 1,
     "_sockets": [],
     "_useTint": false,
     "_debugMesh": false,
@@ -440,7 +440,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "trumb",
+    "_name": "away",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -596,7 +596,7 @@
       "__uuid__": "8f828178-4f61-4ead-8351-5c18e84e8853",
       "__expectedType__": "sp.SkeletonData"
     },
-    "defaultSkin": "",
+    "defaultSkin": "default",
     "defaultAnimation": "",
     "_premultipliedAlpha": true,
     "_timeScale": 1,
@@ -631,7 +631,7 @@
   },
   {
     "__type__": "cc.Node",
-    "_name": "trump",
+    "_name": "away",
     "_objFlags": 0,
     "__editorExtras__": {},
     "_parent": {
@@ -652,7 +652,7 @@
     },
     "_lpos": {
       "__type__": "cc.Vec3",
-      "x": 0,
+      "x": -258.223,
       "y": 0,
       "z": 0
     },
@@ -693,13 +693,13 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 398.3999938964844,
-      "height": 398.3999938964844
+      "width": 812,
+      "height": 497
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
-      "x": 0.5,
-      "y": 0.5
+      "x": 0.1933497536945813,
+      "y": 0.6526357854156187
     },
     "_id": ""
   },
@@ -730,16 +730,16 @@
       "a": 255
     },
     "_skeletonData": {
-      "__uuid__": "d3ef1325-7247-4c98-b384-1bb00dd9e0cb",
+      "__uuid__": "691335c1-81b2-458b-9a55-e502f593162a",
       "__expectedType__": "sp.SkeletonData"
     },
     "defaultSkin": "default",
-    "defaultAnimation": "trump",
+    "defaultAnimation": "red-player",
     "_premultipliedAlpha": false,
     "_timeScale": 1,
-    "_preCacheMode": 0,
-    "_cacheMode": 0,
-    "_defaultCacheMode": 0,
+    "_preCacheMode": 1,
+    "_cacheMode": 1,
+    "_defaultCacheMode": 1,
     "_sockets": [],
     "_useTint": false,
     "_debugMesh": false,
