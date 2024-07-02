@@ -116,7 +116,7 @@ export default class Game extends GameComponent {
 
     async playWinningSound() {
         for (const resultSoundInfo of this.resultSoundIds) {
-            this.playSound(resultSoundInfo.soundId);
+            this.playStoppableSFX(resultSoundInfo.soundId);
             await FunctionUtils.delay(resultSoundInfo.duration * 1000);
         }
     }
@@ -134,7 +134,7 @@ export default class Game extends GameComponent {
     @render(UserSettings.UserSettingStore, (store) => store.sfxEnable)
     enableSFX(sfxEnable: boolean) {
         if (!sfxEnable) {
-            this.stopStoppableSFX(this.crowdSounds);
+            this.stopStoppableSFX("");
         }
     }
 
