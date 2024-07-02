@@ -223,11 +223,8 @@
       "b": 255,
       "a": 255
     },
-    "_skeletonData": {
-      "__uuid__": "8f828178-4f61-4ead-8351-5c18e84e8853",
-      "__expectedType__": "sp.SkeletonData"
-    },
-    "defaultSkin": "default",
+    "_skeletonData": null,
+    "defaultSkin": "",
     "defaultAnimation": "",
     "_premultipliedAlpha": true,
     "_timeScale": 1,
@@ -592,11 +589,8 @@
       "b": 255,
       "a": 255
     },
-    "_skeletonData": {
-      "__uuid__": "8f828178-4f61-4ead-8351-5c18e84e8853",
-      "__expectedType__": "sp.SkeletonData"
-    },
-    "defaultSkin": "default",
+    "_skeletonData": null,
+    "defaultSkin": "",
     "defaultAnimation": "",
     "_premultipliedAlpha": true,
     "_timeScale": 1,
