@@ -21,14 +21,13 @@ startGame(settings.name, containerOptions, siteConfigs);
 
 const { ccclass, property } = _decorator;
 const { observer, render } = Observer;
-const { RoundTimeStore } = Rounds;
 
 type ResultSoundInfo = {
     soundId: string;
     duration: number;
 };
 
-export const HOME_NAME = "HOME";
+export const HOME_AWAY_NAME = "HOME-AWAY";
 
 @ccclass
 @observer(settings.name)
@@ -59,7 +58,7 @@ export default class Game extends GameComponent {
     private readonly winningSounds = { home: "home", away: "away" };
     private readonly winningMusic = { home: "home_music", away: "home_music" };
     private readonly crowdSounds = "crowd-game";
-    private readonly pathAnimTossDefault = `animations/${HOME_NAME}/toss/coin_toss`;
+    private readonly pathAnimTossDefault = `animations/${HOME_AWAY_NAME}/toss/coin_toss`;
 
     protected clientRoundId = -1;
     protected resultSoundIds: ResultSoundInfo[] = [];
