@@ -1,9 +1,9 @@
-import { IHandler, IMultipleHandlers } from "@sg/game-client-base/dist/shared";
+import gc from "@sg/game-client-base";
+import { IMultipleHandlers } from "@sg/game-client-base/dist/shared";
 import inversify from "inversify";
 
 import { GameServiceMessage } from "../game-messages";
 import { MatchConfigStore } from "./match-config-store";
-import gc from "@sg/game-client-base";
 
 const { injectable, inject } = inversify;
 
