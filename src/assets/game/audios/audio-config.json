@@ -51,10 +51,6 @@
         "bundle": "resources",
         "path": "team/bel_vi"
     },
-    "den_vi": {
-        "bundle": "resources",
-        "path": "team/den_vi"
-    },
     "fra_vi": {
         "bundle": "resources",
         "path": "team/fra_vi"
@@ -91,13 +87,17 @@
         "bundle": "resources",
         "path": "team/tur_vi"
     },
+    "eng_vi": {
+        "bundle": "resources",
+        "path": "team/eng_vi"
+    },
+    "aut_vi": {
+        "bundle": "resources",
+        "path": "team/aut_vi"
+    },
     "bel_id": {
         "bundle": "resources",
         "path": "team/bel_id"
-    },
-    "den_id": {
-        "bundle": "resources",
-        "path": "team/den_id"
     },
     "fra_id": {
         "bundle": "resources",
@@ -131,6 +131,14 @@
         "bundle": "resources",
         "path": "team/sui_id"
     },
+    "eng_id": {
+        "bundle": "resources",
+        "path": "team/eng_id"
+    },
+    "aut_id": {
+        "bundle": "resources",
+        "path": "team/aut_id"
+    },
     "tur_id": {
         "bundle": "resources",
         "path": "team/tur_id"
@@ -138,10 +146,6 @@
     "bel_th": {
         "bundle": "resources",
         "path": "team/bel_th"
-    },
-    "den_th": {
-        "bundle": "resources",
-        "path": "team/den_th"
     },
     "fra_th": {
         "bundle": "resources",
@@ -179,13 +183,17 @@
         "bundle": "resources",
         "path": "team/tur_th"
     },
+    "eng_th": {
+        "bundle": "resources",
+        "path": "team/eng_th"
+    },
+    "aut_th": {
+        "bundle": "resources",
+        "path": "team/aut_th"
+    },
     "bel_en": {
         "bundle": "resources",
         "path": "team/bel_en"
-    },
-    "den_en": {
-        "bundle": "resources",
-        "path": "team/den_en"
     },
     "fra_en": {
         "bundle": "resources",
@@ -223,13 +231,17 @@
         "bundle": "resources",
         "path": "team/tur_en"
     },
+    "eng_en": {
+        "bundle": "resources",
+        "path": "team/eng_en"
+    },
+    "aut_en": {
+        "bundle": "resources",
+        "path": "team/aut_en"
+    },
     "bel_zh_cn": {
         "bundle": "resources",
         "path": "team/bel_zh_cn"
-    },
-    "den_zh_cn": {
-        "bundle": "resources",
-        "path": "team/den_zh_cn"
     },
     "fra_zh_cn": {
         "bundle": "resources",
@@ -267,13 +279,17 @@
         "bundle": "resources",
         "path": "team/tur_zh_cn"
     },
+    "eng_zh_cn": {
+        "bundle": "resources",
+        "path": "team/eng_zh_cn"
+    },
+    "aut_zh_cn": {
+        "bundle": "resources",
+        "path": "team/aut_zh_cn"
+    },
     "bel_zh_tw": {
         "bundle": "resources",
         "path": "team/bel_zh_tw"
-    },
-    "den_zh_tw": {
-        "bundle": "resources",
-        "path": "team/den_zh_tw"
     },
     "fra_zh_tw": {
         "bundle": "resources",
@@ -310,5 +326,13 @@
     "tur_zh_tw": {
         "bundle": "resources",
         "path": "team/tur_zh_tw"
+    },
+    "eng_zh_tw": {
+        "bundle": "resources",
+        "path": "team/eng_zh_tw"
+    },
+    "aut_zh_tw": {
+        "bundle": "resources",
+        "path": "team/aut_zh_tw"
     }
 }
