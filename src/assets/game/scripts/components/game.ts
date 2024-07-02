@@ -174,7 +174,6 @@ export default class Game extends GameComponent {
     @render(MatchConfigStore, (store) => store.match, { fireImmediately: true })
     updateMatch(match: GameServiceMessage.MatchConfig) {
         if (match.home && match.away) {
-            console.log("updateMatch", `${match.home}-${match.away}`);
             this.match = match;
             this.loadMatchSkeleton(this.match);
         }
@@ -196,8 +195,7 @@ export default class Game extends GameComponent {
 
     async loadMatchSkeleton(match: GameServiceMessage.MatchConfig) {
         if (match?.home && match?.away) {
-            console.log("updateTeamName", `${match.home}-${match.away}`);
-            const resourcePath = match?.home.toUpperCase() || HOME_NAME;
+            const resourcePath = `${match?.home.toUpperCase()}-${match?.away.toUpperCase()}`;
             await this.loadResourcesAnim(resourcePath);
         }
     }
