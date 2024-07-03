@@ -36,8 +36,8 @@ export class CoinTossResultStatistic extends ResultStatistic {
     @render(MatchConfigStore, (store) => store.match, { fireImmediately: true })
     updateMatch(match: GameServiceMessage.MatchConfig) {
         if (match && match.home && match.away && this.homeLabel && this.awayLabel) {
-            this.homeLabel.string = gc.Translator.gameTranslate(`glossary_${match.home}`);
-            this.awayLabel.string = gc.Translator.gameTranslate(`glossary_${match.away}`);
+            this.homeLabel.string = gc.Translator.gameTranslate(`glossary_${match.home}`)?.toUpperCase();
+            this.awayLabel.string = gc.Translator.gameTranslate(`glossary_${match.away}`)?.toUpperCase();
         }
     }
 }
