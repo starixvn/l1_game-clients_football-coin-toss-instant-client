@@ -78,7 +78,7 @@ export class CoinTossBetItem extends PFBetItem {
             return "";
         }
 
-        return teamTypeText;
+        return teamTypeText.toUpperCase();
     }
 
     public handleHighlightAnim(isActive: boolean) {
