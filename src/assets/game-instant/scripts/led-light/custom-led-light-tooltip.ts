@@ -40,7 +40,6 @@ export class CustomLedLightTooltip extends LedLightTooltip {
         this.roundId.string = roundIdText;
         const winChoice = this.findWinningChoice(ledLightInfo);
         let name = gc.Translator.gameTranslate(`glossary_${winChoice}`);
-        console.log("set tooltip", this.match);
         if (this.match?.home && this.match?.away) {
             const teamWin = this.match[winChoice];
             name = gc.Translator.gameTranslate(`glossary_${teamWin}`);

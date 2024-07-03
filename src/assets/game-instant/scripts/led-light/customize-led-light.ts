@@ -12,6 +12,9 @@ const { render } = Observer;
 export class CustomLedLight extends LedLight {
     @property(CCFloat)
     offsetBorderCount = 2;
+
+    @property(Boolean)
+    isPortraitMode = true;
     override toolTipCompt: CustomLedLightTooltip;
 
     protected readonly ledLightItemListener = {
@@ -25,15 +28,16 @@ export class CustomLedLight extends LedLight {
             const ledLightInfo = node.getComponent(LedLightItem).ledLightItemInfo;
             this.toolTipCompt.setTooltipInfo(ledLightInfo);
             this.toolTipCompt.showTooltip();
-
-            let tipAlignment = TipAlignment.Cennter;
-            if (childIndex <= this.offsetBorderCount) {
-                tipAlignment = TipAlignment.Left;
+            if (this.isPortraitMode) {
+                let tipAlignment = TipAlignment.Cennter;
+                if (childIndex <= this.offsetBorderCount) {
+                    tipAlignment = TipAlignment.Left;
+                }
+                if (childIndex >= node.parent.children.length - 1 - this.offsetBorderCount) {
+                    tipAlignment = TipAlignment.Right;
+                }
+                this.toolTipCompt.setAlignment(tipAlignment);
             }
-            if (childIndex >= node.parent.children.length - 1 - this.offsetBorderCount) {
-                tipAlignment = TipAlignment.Right;
-            }
-            this.toolTipCompt.setAlignment(tipAlignment);
         },
         onLeave: () => {
             this.selectedLedLight = null;
