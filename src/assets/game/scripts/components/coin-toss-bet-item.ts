@@ -75,7 +75,7 @@ export class CoinTossBetItem extends PFBetItem {
     getTeamName(teamCode: string, teamType: string) {
         const teamTypeText = gc.Translator.gameTranslate(`glossary_${teamCode.toUpperCase()}`);
         if (teamTypeText.includes("glossary_")) {
-            return gc.Translator.gameTranslate(`glossary_${teamType}`);
+            return "";
         }
 
         return teamTypeText;
