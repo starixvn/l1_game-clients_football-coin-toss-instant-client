@@ -3,7 +3,6 @@ import { _decorator, CCFloat, Color, Node, UITransform, v3 } from "cc";
 import { LedLightTooltip } from "db://shared-components/game/led-light/scripts/components/led-light-tooltip";
 
 import { BetChoice } from "../coin-toss-choices";
-import { GameServiceMessage } from "../../../game/scripts/game-messages";
 
 const { ccclass, property } = _decorator;
 
@@ -25,26 +24,15 @@ export class CustomLedLightTooltip extends LedLightTooltip {
     @property(CCFloat)
     offsetAligment = 0.2;
 
-    private match: GameServiceMessage.MatchConfig;
-
     protected onLoad(): void {
         super.onLoad();
-    }
-
-    public initMatchInfo(match: GameServiceMessage.MatchConfig) {
-        this.match = match;
     }
 
     public setTooltipInfo(ledLightInfo: gc.RoundHistories.RoundHistory) {
         const roundIdText = `#${ledLightInfo.roundId}`;
         this.roundId.string = roundIdText;
         const winChoice = this.findWinningChoice(ledLightInfo);
-        let name = gc.Translator.gameTranslate(`glossary_${winChoice}`);
-        if (this.match?.home && this.match?.away) {
-            const teamWin = this.match[winChoice];
-            name = gc.Translator.gameTranslate(`glossary_${teamWin}`);
-        }
-
+        const name = gc.Translator.gameTranslate(`glossary_${winChoice}`);
         this.result.string = name.toUpperCase();
         this.result.color = new Color(ColorResult[winChoice]);
 
