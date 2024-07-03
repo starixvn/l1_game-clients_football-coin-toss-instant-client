@@ -67,10 +67,18 @@ export class CoinTossBetItem extends PFBetItem {
         if (match?.home && match?.away) {
             const teamType = this.node.name;
             const teamCode = match[teamType];
-            const teamTypeText = gc.Translator.gameTranslate(`glossary_${teamType}`);
-            this.lblTeamName.string = teamType !== teamCode ? `${teamCode.toUpperCase()} - ${teamTypeText.toUpperCase()}` : "";
+            this.lblTeamName.string = this.getTeamName(teamCode, teamType);
             this.loadFlag(teamCode, teamType);
         }
+    }
+
+    getTeamName(teamCode: string, teamType: string) {
+        const teamTypeText = gc.Translator.gameTranslate(`glossary_${teamCode.toUpperCase()}`);
+        if (teamTypeText.startsWith("glossary_")) {
+            return gc.Translator.gameTranslate(`glossary_${teamType}`);
+        }
+
+        return teamTypeText;
     }
 
     public handleHighlightAnim(isActive: boolean) {
