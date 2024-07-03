@@ -2,7 +2,11 @@ import { CCFloat, Node, UITransform, _decorator, v3 } from "cc";
 import { LedLight } from "../../../../extensions/shared-components/assets/game/led-light/scripts/components/led-light";
 import { LedLightItem } from "../../../../extensions/shared-components/assets/game/led-light/scripts/components/led-light-item";
 import { CustomLedLightTooltip, TipAlignment } from "./custom-led-light-tooltip";
+import Observer from "observer";
+import { MatchConfigStore } from "../../../game/scripts/match-config";
+import { GameServiceMessage } from "../../../game/scripts/game-messages";
 const { ccclass, property } = _decorator;
+const { render } = Observer;
 
 @ccclass("CustomLedLight")
 export class CustomLedLight extends LedLight {
@@ -36,4 +40,9 @@ export class CustomLedLight extends LedLight {
             this.toolTipCompt?.showTooltip(false);
         },
     };
+
+    @render(MatchConfigStore, (store) => store.match, { fireImmediately: true })
+    updateMatch(match: GameServiceMessage.MatchConfig) {
+        this.toolTipCompt.initMatchInfo(match);
+    }
 }
