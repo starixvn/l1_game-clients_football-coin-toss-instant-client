@@ -26,8 +26,8 @@ export class CustomLedLight extends LedLight {
                 .convertToNodeSpaceAR(node.getComponent(UITransform).convertToWorldSpaceAR(v3(0, 0, 0)));
             this.toolTipCompt.node.position = v3(pos.x, this.toolTipCompt.node.position.y, 0);
             const ledLightInfo = node.getComponent(LedLightItem).ledLightItemInfo;
-            this.toolTipCompt.setTooltipInfo(ledLightInfo);
-            this.toolTipCompt.showTooltip();
+            this.toolTipCompt?.setTooltipInfo(ledLightInfo);
+            this.toolTipCompt?.showTooltip();
             if (this.isPortraitMode) {
                 let tipAlignment = TipAlignment.Cennter;
                 if (childIndex <= this.offsetBorderCount) {
@@ -36,7 +36,7 @@ export class CustomLedLight extends LedLight {
                 if (childIndex >= node.parent.children.length - 1 - this.offsetBorderCount) {
                     tipAlignment = TipAlignment.Right;
                 }
-                this.toolTipCompt.setAlignment(tipAlignment);
+                this.toolTipCompt?.setAlignment(tipAlignment);
             }
         },
         onLeave: () => {
@@ -47,6 +47,6 @@ export class CustomLedLight extends LedLight {
 
     @render(MatchConfigStore, (store) => store.match, { fireImmediately: true })
     updateMatch(match: GameServiceMessage.MatchConfig) {
-        this.toolTipCompt.initMatchInfo(match);
+        this.toolTipCompt?.initMatchInfo(match);
     }
 }
