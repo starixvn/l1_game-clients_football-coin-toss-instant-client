@@ -193,7 +193,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 154.11406444286084,
+      "width": 154.125,
       "height": 98.28
     },
     "_anchorPoint": {
@@ -232,7 +232,7 @@
     "_string": "HOME",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 59.05418719211823,
+    "_actualFontSize": 48,
     "_fontSize": 48,
     "_fontFamily": "Arial",
     "_lineHeight": 78,
@@ -372,8 +372,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 26.83403471831206,
-      "height": 90.72000000000001
+      "width": 26.8359375,
+      "height": 90.72
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -411,7 +411,7 @@
     "_string": "0",
     "_horizontalAlign": 0,
     "_verticalAlign": 1,
-    "_actualFontSize": 59.05418719211823,
+    "_actualFontSize": 48,
     "_fontSize": 48,
     "_fontFamily": "Arial",
     "_lineHeight": 72,
@@ -484,6 +484,8 @@
       "__id__": 0
     },
     "fileId": "4dLk+cXwdOyrltlUknJGnd",
+    "instance": null,
+    "targetOverrides": null,
     "nestedPrefabInstanceRoots": null
   },
   {
@@ -610,7 +612,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 147.15361058079563,
+      "width": 147.1640625,
       "height": 98.28
     },
     "_anchorPoint": {
@@ -649,7 +651,7 @@
     "_string": "AWAY",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 59.05418719211823,
+    "_actualFontSize": 48,
     "_fontSize": 48,
     "_fontFamily": "Arial",
     "_lineHeight": 78,
@@ -789,8 +791,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 26.83403471831206,
-      "height": 90.72000000000001
+      "width": 26.8359375,
+      "height": 90.72
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -828,7 +830,7 @@
     "_string": "0",
     "_horizontalAlign": 0,
     "_verticalAlign": 1,
-    "_actualFontSize": 59.05418719211823,
+    "_actualFontSize": 48,
     "_fontSize": 48,
     "_fontFamily": "Arial",
     "_lineHeight": 72,
@@ -901,6 +903,8 @@
       "__id__": 0
     },
     "fileId": "d9CFH32xhGBJWpgTEHdFdi",
+    "instance": null,
+    "targetOverrides": null,
     "nestedPrefabInstanceRoots": null
   },
   {
@@ -988,6 +992,12 @@
       }
     ],
     "supportStatisticKeys": "home,away",
+    "homeLabel": {
+      "__id__": 6
+    },
+    "awayLabel": {
+      "__id__": 26
+    },
     "_id": ""
   },
   {

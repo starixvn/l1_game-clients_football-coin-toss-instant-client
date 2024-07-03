@@ -43,7 +43,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": -27.192,
-      "y": 139.048,
+      "y": 176.548,
       "z": 0
     },
     "_lrot": {
@@ -193,8 +193,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 115.59206276589089,
-      "height": 98.28
+      "width": 115.56886626222966,
+      "height": 98.28000000000002
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -232,7 +232,7 @@
     "_string": "HOME",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 44.29064039408867,
+    "_actualFontSize": 43.04926108374384,
     "_fontSize": 36,
     "_fontFamily": "Arial",
     "_lineHeight": 78,
@@ -372,7 +372,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 20.126654669806523,
+      "width": 20.12261560599173,
       "height": 90.72
     },
     "_anchorPoint": {
@@ -411,7 +411,7 @@
     "_string": "0",
     "_horizontalAlign": 0,
     "_verticalAlign": 1,
-    "_actualFontSize": 44.29064039408867,
+    "_actualFontSize": 43.04926108374384,
     "_fontSize": 36,
     "_fontFamily": "Arial",
     "_lineHeight": 72,
@@ -612,8 +612,8 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 110.37138750078203,
-      "height": 98.28
+      "width": 110.3492372554068,
+      "height": 98.28000000000002
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -651,7 +651,7 @@
     "_string": "AWAY",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 44.29064039408867,
+    "_actualFontSize": 43.04926108374384,
     "_fontSize": 36,
     "_fontFamily": "Arial",
     "_lineHeight": 78,
@@ -791,7 +791,7 @@
     },
     "_contentSize": {
       "__type__": "cc.Size",
-      "width": 20.126654669806523,
+      "width": 20.12261560599173,
       "height": 90.72
     },
     "_anchorPoint": {
@@ -830,7 +830,7 @@
     "_string": "0",
     "_horizontalAlign": 0,
     "_verticalAlign": 1,
-    "_actualFontSize": 44.29064039408867,
+    "_actualFontSize": 43.04926108374384,
     "_fontSize": 36,
     "_fontFamily": "Arial",
     "_lineHeight": 72,
@@ -992,6 +992,12 @@
       }
     ],
     "supportStatisticKeys": "home,away",
+    "homeLabel": {
+      "__id__": 6
+    },
+    "awayLabel": {
+      "__id__": 26
+    },
     "_id": ""
   },
   {
@@ -1021,6 +1027,7 @@
       "__id__": 0
     },
     "fileId": "fb78EibzdKNbO4+TxwyuSH",
+    "instance": null,
     "targetOverrides": null
   }
 ]
