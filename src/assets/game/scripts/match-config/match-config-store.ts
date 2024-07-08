@@ -16,6 +16,7 @@ export class MatchConfigStore {
     private _home: string;
     private _away: string;
     private _lastMatch: GameServiceMessage.LastMatchConfig;
+    private _currentMatch: GameServiceMessage.MatchConfig;
 
     set match(match: GameServiceMessage.MatchConfig) {
         this._home = match?.home;
@@ -40,6 +41,14 @@ export class MatchConfigStore {
 
     get lastMatch(): GameServiceMessage.LastMatchConfig {
         return this._lastMatch;
+    }
+
+    set currentMatch(match: GameServiceMessage.MatchConfig) {
+        this._currentMatch = match;
+    }
+
+    get currentMatch(): GameServiceMessage.MatchConfig {
+        return { home: this._currentMatch?.home, away: this._currentMatch?.away }; 
     }
 
     constructor() {

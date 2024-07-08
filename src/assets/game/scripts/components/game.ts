@@ -9,7 +9,7 @@ import { FunctionUtils } from "../../../../extensions/shared-components/assets/s
 import { siteConfigs } from "../../../scripts/site-configs";
 import { GameServiceMessage } from "../game-messages";
 import { containerOptions, settings } from "../game-settings";
-import { MatchConfigStore } from "../match-config";
+import { MatchConfigHandler, MatchConfigStore } from "../match-config";
 import "./../../../resources/i18n";
 import { CoinTossWinningResult } from "./coin-toss-winning-result";
 import { FlipCoin } from "./flip-coin";
@@ -89,6 +89,7 @@ export default class Game extends GameComponent {
     renderInRoundTime(isInRoundTime: boolean) {
         if (isInRoundTime && !this.isLoading) {
             this.winningResult.hideQuickly();
+            this.updateCurrentMatch(this.match);
         }
     }
 
@@ -180,6 +181,13 @@ export default class Game extends GameComponent {
 
             this.highlightResult?.hide();
             this.resultSoundIds = [];
+        }
+    }
+
+    @handle(MatchConfigHandler, (handle, match: GameServiceMessage.MatchConfig) => handle.handleCurrentMatch(match))
+    updateCurrentMatch(match: GameServiceMessage.MatchConfig) {
+        if (match?.home && match?.away) {
+            return match;
         }
     }
 

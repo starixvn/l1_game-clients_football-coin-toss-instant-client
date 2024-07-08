@@ -18,8 +18,19 @@ export class FootballCoinTossRFinishedShowResult extends gc.Settlements.Settleme
         this.handleFinishedShowResult();
 
         const { roundId, result, settlementResult, md5Result } = this.footballSettlementStore;
-        const { match } = this.matchConfigStore;
+        const { currentMatch, match } = this.matchConfigStore;
 
-        this.footballRoundHistoryStore.insertNewRound({ roundId, result, settlementResult, md5Result, match } as any);
+        const isValidMatch = (match) => {
+            return match && typeof match.home === "string" && typeof match.away === "string";
+        };
+
+        const matchToInsert = isValidMatch(currentMatch) ? currentMatch : null;
+        this.footballRoundHistoryStore.insertNewRound({
+            roundId,
+            result,
+            settlementResult,
+            md5Result,
+            match: matchToInsert ?? match,
+        } as any);
     }
 }

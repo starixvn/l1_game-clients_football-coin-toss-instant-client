@@ -17,6 +17,12 @@ export class MatchConfigHandler implements IMultipleHandlers {
         }
     }
 
+    handleCurrentMatch(currentMatch: GameServiceMessage.MatchConfig) {
+        if (currentMatch) {
+            this.matchConfigStore.currentMatch = currentMatch;
+        }
+    }
+
     handleLastMatch(roundHistories: gc.RoundHistories.RoundHistory[]) {
         if (roundHistories && roundHistories.length > 0) {
             const parsedMatch = (roundHistories[0] as any).match;
