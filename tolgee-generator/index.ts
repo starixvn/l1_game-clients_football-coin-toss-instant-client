@@ -87,7 +87,7 @@ win.languages.${languageId} = languages;`;
     export * as zh_tw from "./zh_tw";`
     );
 
-    writeFile("./src/remote/localization", JSON.stringify(remoteNames, null, 4), "json");
+    writeFile("./src/remote/localization", JSON.stringify(remoteNames, null, 5), "json");
 
     console.log("Generated done!");
 });
