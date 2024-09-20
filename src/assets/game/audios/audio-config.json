@@ -238,5 +238,197 @@
     "eng_zh_tw": {
         "bundle": "resources",
         "path": "team/eng_zh_tw"
+    },
+    "mu_vi": {
+        "bundle": "resources",
+        "path": "team/mu_vi"
+    },
+    "mc_vi": {
+        "bundle": "resources",
+        "path": "team/mc_vi"
+    },
+    "real_vi": {
+        "bundle": "resources",
+        "path": "team/real_vi"
+    },
+    "ars_vi": {
+        "bundle": "resources",
+        "path": "team/ars_vi"
+    },
+    "barca_vi": {
+        "bundle": "resources",
+        "path": "team/barca_vi"
+    },
+    "che_vi": {
+        "bundle": "resources",
+        "path": "team/che_vi"
+    },
+    "liv_vi": {
+        "bundle": "resources",
+        "path": "team/liv_vi"
+    },
+    "tot_vi": {
+        "bundle": "resources",
+        "path": "team/tot_vi"
+    },
+    "mu_id": {
+        "bundle": "resources",
+        "path": "team/mu_id"
+    },
+    "mc_id": {
+        "bundle": "resources",
+        "path": "team/mc_id"
+    },
+    "ars_id": {
+        "bundle": "resources",
+        "path": "team/ars_id"
+    },
+    "real_id": {
+        "bundle": "resources",
+        "path": "team/real_id"
+    },
+    "barca_id": {
+        "bundle": "resources",
+        "path": "team/barca_id"
+    },
+    "che_id": {
+        "bundle": "resources",
+        "path": "team/che_id"
+    },
+    "liv_id": {
+        "bundle": "resources",
+        "path": "team/liv_id"
+    },
+    "tot_id": {
+        "bundle": "resources",
+        "path": "team/barca_id"
+    },
+    "mu_th": {
+        "bundle": "resources",
+        "path": "team/mu_th"
+    },
+    "mc_th": {
+        "bundle": "resources",
+        "path": "team/mc_th"
+    },
+    "ars_th": {
+        "bundle": "resources",
+        "path": "team/ars_th"
+    },
+    "real_th": {
+        "bundle": "resources",
+        "path": "team/real_th"
+    },
+    "barca_th": {
+        "bundle": "resources",
+        "path": "team/barca_th"
+    },
+    "che_th": {
+        "bundle": "resources",
+        "path": "team/che_th"
+    },
+    "liv_th": {
+        "bundle": "resources",
+        "path": "team/liv_th"
+    },
+    "tot_th": {
+        "bundle": "resources",
+        "path": "team/tot_th"
+    },
+    "mu_en": {
+        "bundle": "resources",
+        "path": "team/mu_en"
+    },
+    "mc_en": {
+        "bundle": "resources",
+        "path": "team/mc_en"
+    },
+    "ars_en": {
+        "bundle": "resources",
+        "path": "team/ars_en"
+    },
+    "real_en": {
+        "bundle": "resources",
+        "path": "team/real_en"
+    },
+    "barca_en": {
+        "bundle": "resources",
+        "path": "team/barca_en"
+    },
+    "che_en": {
+        "bundle": "resources",
+        "path": "team/che_en"
+    },
+    "liv_en": {
+        "bundle": "resources",
+        "path": "team/liv_en"
+    },
+    "tot_en": {
+        "bundle": "resources",
+        "path": "team/tot_en"
+    },
+    "mu_zh_cn": {
+        "bundle": "resources",
+        "path": "team/mu_zh_cn"
+    },
+    "mc_zh_cn": {
+        "bundle": "resources",
+        "path": "team/mc_zh_cn"
+    },
+    "ars_zh_cn": {
+        "bundle": "resources",
+        "path": "team/ars_zh_cn"
+    },
+    "real_zh_cn": {
+        "bundle": "resources",
+        "path": "team/real_zh_cn"
+    },
+    "barca_zh_cn": {
+        "bundle": "resources",
+        "path": "team/barca_zh_cn"
+    },
+    "liv_zh_cn": {
+        "bundle": "resources",
+        "path": "team/liv_zh_cn"
+    },
+    "che_zh_cn": {
+        "bundle": "resources",
+        "path": "team/che_zh_cn"
+    },
+    "tot_zh_cn": {
+        "bundle": "resources",
+        "path": "team/tot_zh_cn"
+    },
+    "mu_zh_tw": {
+        "bundle": "resources",
+        "path": "team/mu_zh_tw"
+    },
+    "mc_zh_tw": {
+        "bundle": "resources",
+        "path": "team/mc_zh_tw"
+    },
+    "ars_zh_tw": {
+        "bundle": "resources",
+        "path": "team/ars_zh_tw"
+    },
+    "real_zh_tw": {
+        "bundle": "resources",
+        "path": "team/real_zh_tw"
+    },
+    "barca_zh_tw": {
+        "bundle": "resources",
+        "path": "team/barca_zh_tw"
+    },
+    "che_zh_tw": {
+        "bundle": "resources",
+        "path": "team/che_zh_tw"
+    },
+    "liv_zh_tw": {
+        "bundle": "resources",
+        "path": "team/liv_zh_tw"
+    },
+    "tot_zh_tw": {
+        "bundle": "resources",
+        "path": "team/tot_zh_tw"
     }
 }

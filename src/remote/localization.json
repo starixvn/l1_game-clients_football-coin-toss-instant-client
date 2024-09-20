@@ -1,11 +1,11 @@
 {
     "lobbyNames": {},
     "gameNames": {
-        "en": "EURO 2024 RNG",
-        "id": "EURO 2024 RNG",
-        "th": "EURO 2024 RNG",
-        "vi": "EURO 2024 RNG",
-        "zh_cn": "EURO 2024 RNG",
-        "zh_tw": "EURO 2024 RNG"
+        "en": "Soccer Coin Toss",
+        "id": "Lempar Koin Sepak Bola",
+        "th": "ฟุตบอลโยนเหรียญ",
+        "vi": "Tung Xu Bóng Đá",
+        "zh_cn": "足球掷币游戏",
+        "zh_tw": "足球擲幣遊戲"
     }
 }
