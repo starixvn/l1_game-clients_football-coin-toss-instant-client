@@ -283,12 +283,12 @@
       ],
       "subMetas": {}
     },
-    "abc90": {
+    "f6627": {
       "importer": "sprite-frame",
-      "uuid": "9b0cc76d-08fa-4973-b37e-e328a0c5ac66@abc90",
+      "uuid": "9b0cc76d-08fa-4973-b37e-e328a0c5ac66@f6627",
       "displayName": "",
-      "id": "abc90",
-      "name": "chel",
+      "id": "f6627",
+      "name": "che",
       "userData": {
         "trimType": "auto",
         "trimThreshold": 1,

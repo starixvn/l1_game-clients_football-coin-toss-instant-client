@@ -79,7 +79,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>chel.png</key>
+            <key>che.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -408,7 +408,7 @@
             <key>size</key>
             <string>{1024,2048}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:8fe8d1881664b11e49c32f199995c0ea:9797ff6c3e2fbaa12b479ec1a7529ecf:7c9d6bb15205f9cad103430275c1f8a2$</string>
+            <string>$TexturePacker:SmartUpdate:a6d2c3a4587b2276470ac5a2dac961a9:9797ff6c3e2fbaa12b479ec1a7529ecf:7c9d6bb15205f9cad103430275c1f8a2$</string>
             <key>textureFileName</key>
             <string>flags-portrait.png</string>
         </dict>
