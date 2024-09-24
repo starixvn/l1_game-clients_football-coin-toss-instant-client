@@ -65,9 +65,13 @@ export class CustomLedLightTooltip extends LedLightTooltip {
         }
         const pos = this.background.position;
         const backgroundTransform = this.background.getComponent(UITransform);
-        const width = backgroundTransform?.width;
-        const dict = [-0.5 + this.offsetAligment, 0, 0.5 - this.offsetAligment];
-        const posX = width * dict[alignment];
-        this.background.position = v3(posX, pos.y, pos.z);
+        if (backgroundTransform) {
+            backgroundTransform.width += 5;
+    
+            const width = backgroundTransform.width;
+            const dict = [-0.5 + this.offsetAligment, 0, 0.5 - this.offsetAligment];
+            const posX = width * dict[alignment];
+            this.background.position = v3(posX, pos.y, pos.z);
+        }      
     }
 }
