@@ -59,19 +59,35 @@ export class CustomLedLightTooltip extends LedLightTooltip {
         return choices.find((choice) => ledLightInfo.settlementResult[choice]) || "";
     }
 
+    public adjustBackgroundWidth(increment: number) {
+        if (!this.background) {
+            return;
+        }
+    
+        const backgroundTransform = this.background.getComponent(UITransform);
+        if (backgroundTransform) {
+            backgroundTransform.width += increment;
+        }
+    }
+    
     public setAlignment(alignment: TipAlignment) {
         if (!this.background) {
             return;
         }
+    
+        this.adjustBackgroundWidth(25);
+    
         const pos = this.background.position;
         const backgroundTransform = this.background.getComponent(UITransform);
         if (backgroundTransform) {
-            backgroundTransform.width += 5;
-    
             const width = backgroundTransform.width;
             const dict = [-0.5 + this.offsetAligment, 0, 0.5 - this.offsetAligment];
             const posX = width * dict[alignment];
             this.background.position = v3(posX, pos.y, pos.z);
-        }      
+        }
+    }
+    
+    public setBackground() {
+        this.adjustBackgroundWidth(25); // Điều chỉnh chiều rộng
     }
 }

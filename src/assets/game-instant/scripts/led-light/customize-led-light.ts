@@ -32,6 +32,8 @@ export class CustomLedLight extends LedLight {
                     tipAlignment = TipAlignment.Right;
                 }
                 this.toolTipCompt?.setAlignment(tipAlignment);
+            } else {
+                this.toolTipCompt?.setBackground();
             }
         },
         onLeave: () => {
