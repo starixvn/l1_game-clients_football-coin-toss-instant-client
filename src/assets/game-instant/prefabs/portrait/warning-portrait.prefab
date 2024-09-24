@@ -821,7 +821,7 @@
     "_lpos": {
       "__type__": "cc.Vec3",
       "x": 0,
-      "y": -7.105427357601002e-15,
+      "y": 3.552713678800501e-15,
       "z": 0
     },
     "_lrot": {
@@ -862,7 +862,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 446,
-      "height": 63.27999999999999
+      "height": 35.279999999999994
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
@@ -897,14 +897,14 @@
       "b": 255,
       "a": 255
     },
-    "_string": "สามารถเดิมพันได้ทั้ง แมนยู หรือ เชลซี.",
+    "_string": "สามารถเดิมพันได้ทั้ง เรอัลมาดริด หรือ บาร์เซโลน่า.",
     "_horizontalAlign": 1,
     "_verticalAlign": 1,
-    "_actualFontSize": 24,
-    "_fontSize": 23,
+    "_actualFontSize": 21.413793103448274,
+    "_fontSize": 21,
     "_fontFamily": "Arial",
     "_lineHeight": 28,
-    "_overflow": 2,
+    "_overflow": 3,
     "_enableWrapText": true,
     "_font": {
       "__uuid__": "0b9efa3d-c517-4301-af5b-ac67552528db",
@@ -971,7 +971,7 @@
     "_contentSize": {
       "__type__": "cc.Size",
       "width": 770,
-      "height": 133.27999999999997
+      "height": 105.28
     },
     "_anchorPoint": {
       "__type__": "cc.Vec2",
