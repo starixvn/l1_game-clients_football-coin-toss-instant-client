@@ -1,8 +1,8 @@
 {
-"skeleton": { "hash": "pF4FkPCC061JZ6l5t444SomkQn4=", "spine": "3.8.75" },
+"skeleton": { "hash": "fo14qWBBKeJr5TvNS5Il2lTo5I0=", "spine": "3.8.75" },
 "bones": [
 	{ "name": "coin_toss" },
-	{ "name": "flip", "parent": "coin_toss", "x": 5.23 },
+	{ "name": "flip", "parent": "coin_toss" },
 	{ "name": "settle", "parent": "coin_toss" }
 ],
 "slots": [
