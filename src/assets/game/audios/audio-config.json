@@ -301,7 +301,7 @@
     },
     "tot_id": {
         "bundle": "resources",
-        "path": "team/barca_id"
+        "path": "team/tot_id"
     },
     "mu_th": {
         "bundle": "resources",
