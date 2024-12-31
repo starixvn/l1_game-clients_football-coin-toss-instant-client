@@ -1,11 +1,18 @@
 {
-    "lobbyNames": {},
-    "gameNames": {
-        "en": "Soccer Coin Toss",
-        "id": "Lempar Koin Sepak Bola",
-        "th": "ฟุตบอลโยนเหรียญ",
-        "vi": "Tung Xu Bóng Đá",
-        "zh_cn": "足球掷币游戏",
-        "zh_tw": "足球擲幣遊戲"
-    }
+     "lobbyNames": {
+          "en": "Soccer Coin Toss",
+          "id": "Lempar Koin\nSepak Bola",
+          "th": "ฟุตบอลโยนเหรียญ",
+          "vi": "Tung Xu Bóng Đá",
+          "zh_cn": "足球掷币游戏",
+          "zh_tw": "足球擲幣遊戲"
+     },
+     "gameNames": {
+          "en": "Soccer Coin Toss",
+          "id": "Lempar Koin Sepak Bola",
+          "th": "ฟุตบอลโยนเหรียญ",
+          "vi": "Tung Xu Bóng Đá",
+          "zh_cn": "足球掷币游戏",
+          "zh_tw": "足球擲幣遊戲"
+     }
 }
