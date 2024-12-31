@@ -364,7 +364,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>tot.png</key>
+            <key>tha.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -379,7 +379,7 @@
                 <key>textureRotated</key>
                 <false/>
             </dict>
-            <key>tur.png</key>
+            <key>tot.png</key>
             <dict>
                 <key>aliases</key>
                 <array/>
@@ -391,6 +391,36 @@
                 <string>{142,142}</string>
                 <key>textureRect</key>
                 <string>{{579,381},{142,124}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>tur.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,9}</string>
+                <key>spriteSize</key>
+                <string>{142,124}</string>
+                <key>spriteSourceSize</key>
+                <string>{142,142}</string>
+                <key>textureRect</key>
+                <string>{{723,381},{142,124}}</string>
+                <key>textureRotated</key>
+                <false/>
+            </dict>
+            <key>vie.png</key>
+            <dict>
+                <key>aliases</key>
+                <array/>
+                <key>spriteOffset</key>
+                <string>{0,9}</string>
+                <key>spriteSize</key>
+                <string>{142,124}</string>
+                <key>spriteSourceSize</key>
+                <string>{142,142}</string>
+                <key>textureRect</key>
+                <string>{{867,381},{142,124}}</string>
                 <key>textureRotated</key>
                 <false/>
             </dict>
@@ -408,7 +438,7 @@
             <key>size</key>
             <string>{1024,512}</string>
             <key>smartupdate</key>
-            <string>$TexturePacker:SmartUpdate:c04d77a6a48b850045dba21ad4ced2dc:dfe671d7f3dc7746066b8a7ce4f8a65e:6f2dc11bc8c201b6f0e6add99f4edbc3$</string>
+            <string>$TexturePacker:SmartUpdate:b2ef206ee638327ea26ddb9105e5d389:4987abf84fd11f1f8ad5da97d4e4cd7c:6f2dc11bc8c201b6f0e6add99f4edbc3$</string>
             <key>textureFileName</key>
             <string>flags.png</string>
         </dict>
