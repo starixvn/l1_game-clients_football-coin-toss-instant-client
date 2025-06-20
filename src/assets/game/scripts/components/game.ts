@@ -4,7 +4,7 @@ import GameComponent from "db://shared-components/game/scripts/components/game-c
 import { startGame } from "db://shared-components/shared/scripts/startup";
 import Observer from "observer";
 import { AudioUtils } from "../../../../extensions/shared-components/assets/game/audios/utils";
-import { bundleManager } from "../../../../extensions/shared-components/assets/shared/common-components/bundle-magager/bundle-manager";
+import { bundleManager } from "../../../../extensions/shared-components/assets/shared/common-components/bundle-manager/bundle-manager";
 import { FunctionUtils } from "../../../../extensions/shared-components/assets/shared/utils";
 import { siteConfigs } from "../../../scripts/site-configs";
 import { GameServiceMessage } from "../game-messages";

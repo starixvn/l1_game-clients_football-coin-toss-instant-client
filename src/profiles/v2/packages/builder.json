@@ -1,5 +1,5 @@
 {
-  "__version__": "1.3.6",
+  "__version__": "1.3.9",
   "log": {
     "level": 2
   },
@@ -11,7 +11,8 @@
         "progress": 1,
         "state": "success",
         "stage": "build",
-        "message": "5-29-2024 11:30:44 build success in 141416 ms!",
+        "message": "6-20-2025 14:08:00 build success in 1 min 40 s!",
+        "detailMessage": "builder:build-project-total (99913ms)\r",
         "options": {
           "name": "cocos-3x",
           "platform": "web-mobile",
@@ -64,9 +65,31 @@
           "startSceneAssetBundle": false,
           "bundleConfigs": [],
           "bundleCommonChunk": false,
-          "logDest": "project://temp/builder/log/web-mobile4-13-2023 09-39.log"
+          "logDest": "project://temp/builder/log/web-mobile4-13-2023 09-39.log",
+          "overwriteProjectSettings": {
+            "includeModules": {
+              "physics": "inherit-project-setting",
+              "physics-2d": "inherit-project-setting",
+              "gfx-webgl2": "inherit-project-setting"
+            },
+            "macroConfig": {
+              "cleanupImageCache": "off"
+            }
+          },
+          "buildMode": "normal",
+          "engineModulesConfigKey": "migrationsConfig",
+          "mangleProperties": false,
+          "nativeCodeBundleMode": "both",
+          "inlineEnum": true,
+          "md5CacheOptions": {
+            "excludes": [],
+            "includes": [],
+            "replaceOnly": [],
+            "handleTemplateMd5Link": true
+          },
+          "wasmCompressionMode": false
         },
-        "time": "5-29-2024 11:28:23",
+        "time": "6-20-2025 14:06:20",
         "dirty": false
       }
     }

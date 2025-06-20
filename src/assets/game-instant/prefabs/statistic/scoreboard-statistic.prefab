@@ -1696,12 +1696,12 @@
     "__prefab": {
       "__id__": 86
     },
-    "bigRoad": {
-      "__id__": 80
-    },
-    "beadRoad": {
-      "__id__": 80
-    },
+    "scoreboards": [
+      {
+        "__id__": 80
+      }
+    ],
+    "resultPercentage": null,
     "_id": ""
   },
   {
