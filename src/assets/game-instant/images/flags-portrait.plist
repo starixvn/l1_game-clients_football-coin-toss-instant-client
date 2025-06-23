@@ -434,13 +434,13 @@
             <key>premultiplyAlpha</key>
             <false/>
             <key>realTextureFileName</key>
-            <string>flags-portrait.png</string>
+            <string>flags-portrait.webp</string>
             <key>size</key>
             <string>{1024,2048}</string>
             <key>smartupdate</key>
             <string>$TexturePacker:SmartUpdate:b942907bbf0934ec217398f1bbc1f171:93eea43a21fa114fcd0473594498fac9:7c9d6bb15205f9cad103430275c1f8a2$</string>
             <key>textureFileName</key>
-            <string>flags-portrait.png</string>
+            <string>flags-portrait.webp</string>
         </dict>
     </dict>
 </plist>
