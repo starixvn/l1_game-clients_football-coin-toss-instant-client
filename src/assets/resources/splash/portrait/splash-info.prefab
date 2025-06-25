@@ -64,8 +64,8 @@
     },
     "_lscale": {
       "__type__": "cc.Vec3",
-      "x": 0.9955357142857143,
-      "y": 0.9955357142857143,
+      "x": 0.6174698795180723,
+      "y": 0.6174698795180723,
       "z": 1
     },
     "_mobility": 0,
@@ -700,7 +700,7 @@
   {
     "__type__": "cc.TargetInfo",
     "localID": [
-      "a3dT6FGcpDlq5Qmjn+nmKg"
+      "03F8gCIJBGbL2W5lRmG0qm"
     ]
   },
   {
