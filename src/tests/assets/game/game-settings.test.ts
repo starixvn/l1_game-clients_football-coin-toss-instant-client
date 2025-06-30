@@ -21,6 +21,7 @@ describe("settings", () => {
                 startRound: 3,
             },
             numberOfRoundHistory: 100,
+            observerNamespace: "FootballCoinToss",
         });
     });
 });
