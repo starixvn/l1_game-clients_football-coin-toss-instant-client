@@ -190,6 +190,7 @@ export default class Game extends GameComponent {
         if (match?.home && match?.away) {
             return match;
         }
+        return null;
     }
 
     @render(gc.App.AppStore, (store) => store.isLoading)
