@@ -8,7 +8,8 @@ import { bundleManager } from "../../../../extensions/shared-components/assets/s
 import { FunctionUtils } from "../../../../extensions/shared-components/assets/shared/utils";
 import { siteConfigs } from "../../../scripts/site-configs";
 import { GameServiceMessage } from "../game-messages";
-import { containerOptions, settings } from "../game-settings";
+import { settings } from "../game-settings";
+import { containerOptions } from "../containerOptions";
 import { MatchConfigHandler, MatchConfigStore } from "../match-config";
 import "./../../../resources/i18n";
 import { CoinTossWinningResult } from "./coin-toss-winning-result";
