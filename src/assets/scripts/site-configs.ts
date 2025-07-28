@@ -31,6 +31,7 @@ const defaultConfig: gc.Configs.SiteConfigs = {
 
 let configDev = {
     isDev: defaultConfig.isDev,
+    
     userServiceUrlDev: defaultConfig.userServiceUrlDev,
     serverDomainMapper: defaultConfig.serverDomainMapper,
     notificationServiceUrlDev: defaultConfig.notificationServiceUrlDev,
