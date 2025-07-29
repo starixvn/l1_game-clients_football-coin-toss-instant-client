@@ -24,6 +24,11 @@
         "isLazyLoad": true,
         "path": "home_id"
     },
+    "home_ja": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "home_ja"
+    },
     "home_zh_cn": {
         "bundle": "resources",
         "isLazyLoad": true,
@@ -58,6 +63,11 @@
         "bundle": "resources",
         "isLazyLoad": true,
         "path": "away_id"
+    },
+    "away_ja": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "away_ja"
     },
     "away_zh_cn": {
         "bundle": "resources",
@@ -158,6 +168,46 @@
         "bundle": "resources",
         "isLazyLoad": true,
         "path": "team/tur_id"
+    },
+    "fra_ja": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/fra_ja"
+    },
+    "ger_ja": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/ger_ja"
+    },
+    "ned_ja": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/ned_ja"
+    },
+    "por_ja": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/por_ja"
+    },
+    "esp_ja": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/esp_ja"
+    },
+    "sui_ja": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/sui_ja"
+    },
+    "tur_ja": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/tur_ja"
+    },
+    "eng_ja": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/eng_ja"
     },
     "fra_th": {
         "bundle": "resources",
@@ -398,6 +448,46 @@
         "bundle": "resources",
         "isLazyLoad": true,
         "path": "team/tot_id"
+    },
+    "mu_ja": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/mu_ja"
+    },
+    "mc_ja": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/mc_ja"
+    },
+    "real_ja": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/real_ja"
+    },
+    "ars_ja": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/ars_ja"
+    },
+    "barca_ja": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/barca_ja"
+    },
+    "che_ja": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/che_ja"
+    },
+    "liv_ja": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/liv_ja"
+    },
+    "tot_ja": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/tot_ja"
     },
     "mu_th": {
         "bundle": "resources",
