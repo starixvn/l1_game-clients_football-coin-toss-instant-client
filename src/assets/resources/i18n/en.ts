@@ -350,5 +350,5 @@ export const languages = {
 if (!win.languages) {
     win.languages = {};
 }
-                          
+
 win.languages.en = languages;

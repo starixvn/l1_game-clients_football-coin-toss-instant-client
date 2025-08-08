@@ -4,17 +4,19 @@
           "id": "Lempar Koin\nSepak Bola",
           "th": "ฟุตบอลโยนเหรียญ",
           "vi": "Tung Xu Bóng Đá",
-          "zh_cn": "Tung Xu Bóng Đá",
+          "zh_cn": "足球掷币游戏",
           "zh_tw": "足球擲幣遊戲",
-          "ja": "サッカーコイントス"
+          "ja": "サッカーコイントス",
+          "es": "Lanzamiento de\nMoneda de Fútbol"
      },
      "gameNames": {
           "en": "Soccer Coin Toss",
           "id": "Lempar Koin Sepak Bola",
           "th": "ฟุตบอลโยนเหรียญ",
           "vi": "Tung Xu Bóng Đá",
-          "zh_cn": "Tung Xu Bóng Đá",
+          "zh_cn": "足球掷币游戏",
           "zh_tw": "足球擲幣遊戲",
-          "ja": "サッカー コイン投げ"
+          "ja": "サッカーコイントス",
+          "es": "Lanzamiento de Moneda de Fútbol"
      }
 }

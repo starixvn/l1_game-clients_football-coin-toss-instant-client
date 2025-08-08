@@ -9,6 +9,11 @@
         "isLazyLoad": true,
         "path": "home_en"
     },
+    "home_es": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "home_es"
+    },
     "home_vi": {
         "bundle": "resources",
         "isLazyLoad": true,
@@ -48,6 +53,11 @@
         "bundle": "resources",
         "isLazyLoad": true,
         "path": "away_en"
+    },
+    "away_es": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "away_es"
     },
     "away_vi": {
         "bundle": "resources",
@@ -708,5 +718,95 @@
         "bundle": "resources",
         "isLazyLoad": true,
         "path": "team/tha_zh_tw"
+    },
+    "ars_es": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/ars_es"
+    },
+    "barca_es": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/barca_es"
+    },
+    "che_es": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/che_es"
+    },
+    "esp_es": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/esp_es"
+    },
+    "fra_es": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/fra_es"
+    },
+    "ger_es": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/ger_es"
+    },
+    "liv_es": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/liv_es"
+    },
+    "mc_es": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/mc_es"
+    },
+    "mu_es": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/mu_es"
+    },
+    "ned_es": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/ned_es"
+    },
+    "por_es": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/por_es"
+    },
+    "real_es": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/real_es"
+    },
+    "sui_es": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/sui_es"
+    },
+    "tha_es": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/tha_es"
+    },
+    "tur_es": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/tur_es"
+    },
+    "vie_es": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/vie_es"
+    },
+    "eng_es": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/eng_es"
+    },
+    "tot_es": {
+        "bundle": "resources",
+        "isLazyLoad": true,
+        "path": "team/tot_es"
     }
 }
