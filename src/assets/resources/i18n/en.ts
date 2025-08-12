@@ -173,8 +173,10 @@ export const languages = {
         "pf_header_client_seed": "Client Seed",
         "pf_header_combined_sha512_hash": "Combined SHA512 hash",
         "pf_ header_merge_client_seed": "Merge Client Seed",
+        "pf_ header_merge_client_seed_single": "Merge Client Seed",
         "pf_header_server_seed": "Server Seed",
         "pf_header_server_seed_sha256": "Server Seed SHA256",
+        "pf_header_server_seed_sha256_single": "Server Seed SHA256",
         "pf_new_client_seed_para_1": "Your seed:",
         "pf_player_1": "Player 1",
         "pf_player_2": "Player 2",
@@ -224,7 +226,12 @@ export const languages = {
         "under_maintenance_time": "Starting from %{startTime} to %{endTime} (GMT+8)",
         "win": "Win",
         "win_loss": "Win Loss",
-        "you_reach_max_win": "You reached the max win"
+        "you_reach_max_win": "You reached the max win",
+        "invalid_payline": "invalid_payline",
+        "invalid_bonus": "invalid_bonus",
+        "opened_bonus": "opened_bonus",
+        "invalid_jackpot": "invalid_jackpot",
+        "opened_jackpot": "opened_jackpot"
     },
     "FootballCoinToss": {
         "ars_wins": "Arsenal wins",

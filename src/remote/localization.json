@@ -1,22 +1,30 @@
 {
-     "lobbyNames": {
-          "en": "Soccer Coin Toss",
-          "id": "Lempar Koin\nSepak Bola",
-          "th": "ฟุตบอลโยนเหรียญ",
-          "vi": "Tung Xu Bóng Đá",
-          "zh_cn": "足球掷币游戏",
-          "zh_tw": "足球擲幣遊戲",
-          "ja": "サッカーコイントス",
-          "es": "Lanzamiento de\nMoneda de Fútbol"
-     },
-     "gameNames": {
-          "en": "Soccer Coin Toss",
-          "id": "Lempar Koin Sepak Bola",
-          "th": "ฟุตบอลโยนเหรียญ",
-          "vi": "Tung Xu Bóng Đá",
-          "zh_cn": "足球掷币游戏",
-          "zh_tw": "足球擲幣遊戲",
-          "ja": "サッカーコイントス",
-          "es": "Lanzamiento de Moneda de Fútbol"
-     }
+  "lobbyNames": {
+    "en": "Soccer Coin Toss",
+    "es": "Lanzamiento de\nMoneda de Fútbol",
+    "fil_ph": "\nSoccer Coin Toss",
+    "id": "Lempar Koin\nSepak Bola",
+    "ja": "サッカーコイントス",
+    "ko": "축구 코인 토스",
+    "pt_br": "Cara ou Coroa de Futebol",
+    "th": "ฟุตบอลโยนเหรียญ",
+    "tr": "Futbol Yazı Tura",
+    "vi": "Tung Xu Bóng Đá",
+    "zh_cn": "足球掷币游戏",
+    "zh_tw": "足球擲幣遊戲"
+  },
+  "gameNames": {
+    "en": "Soccer Coin Toss",
+    "es": "Lanzamiento de Moneda de Fútbol",
+    "fil_ph": "\nSoccer Coin Toss",
+    "id": "Lempar Koin Sepak Bola",
+    "ja": "サッカーコイントス",
+    "ko": "축구 코인 토스",
+    "pt_br": "Cara ou Coroa de Futebol",
+    "th": "ฟุตบอลโยนเหรียญ",
+    "tr": "Futbol Yazı Tura",
+    "vi": "Tung Xu Bóng Đá",
+    "zh_cn": "足球掷币游戏",
+    "zh_tw": "足球擲幣遊戲"
+  }
 }

@@ -173,8 +173,10 @@ export const languages = {
         "pf_header_client_seed": "クライアントシード",
         "pf_header_combined_sha512_hash": "SHA512ハッシュ結合",
         "pf_ header_merge_client_seed": "クライアントシードを統合",
+        "pf_ header_merge_client_seed_single": "クライアントシードを統合",
         "pf_header_server_seed": "サーバーシード",
         "pf_header_server_seed_sha256": "サーバーシード SHA256",
+        "pf_header_server_seed_sha256_single": "サーバーシード SHA256",
         "pf_new_client_seed_para_1": "あなたのシード:",
         "pf_player_1": "プレイヤー１",
         "pf_player_2": "プレイヤー２",
@@ -224,7 +226,12 @@ export const languages = {
         "under_maintenance_time": "%{startTime}から%{endTime}（GMT+8）まで",
         "win": "勝利",
         "win_loss": "損益",
-        "you_reach_max_win": "最大勝利額に達しました"
+        "you_reach_max_win": "最大勝利額に達しました",
+        "invalid_payline": "invalid_payline",
+        "invalid_bonus": "invalid_bonus",
+        "opened_bonus": "opened_bonus",
+        "invalid_jackpot": "invalid_jackpot",
+        "opened_jackpot": "opened_jackpot"
     },
     "FootballCoinToss": {
         "ars_wins": "アーセナル勝利",

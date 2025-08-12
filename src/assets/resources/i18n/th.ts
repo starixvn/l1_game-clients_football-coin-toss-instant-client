@@ -170,8 +170,10 @@ export const languages = {
         "pf_header_client_seed": "Client Seed",
         "pf_header_combined_sha512_hash": "รวมกัน SHA512 hash",
         "pf_ header_merge_client_seed": "ผสาน Client Seed",
+        "pf_ header_merge_client_seed_single": "ผสาน Client Seed",
         "pf_header_server_seed": "Server Seed",
         "pf_header_server_seed_sha256": "Server Seed SHA256 ",
+        "pf_header_server_seed_sha256_single": "Server Seed SHA256 ",
         "pf_new_client_seed_para_1": "Seed ของคุณ",
         "pf_player_1": "ผู้เล่น 1",
         "pf_player_2": "ผู้เล่น 2",
@@ -221,7 +223,15 @@ export const languages = {
         "under_maintenance_time": "เริ่มต้นจาก %{startTime} ถึง %{endTime} (GMT+8)",
         "win": "ชนะ",
         "win_loss": "ชนะ แพ้",
-        "you_reach_max_win": "คุณถึงยอดชนะสูงสุด"
+        "you_reach_max_win": "คุณถึงยอดชนะสูงสุด",
+        "message_invalid_payline": "Invalid Payline",
+        "message_invalid_bonus": "Invalid Bonus Game",
+        "message_invalid_jackpot": "Invalid Jackpot Game",
+        "message_opened_jackpot": "Invalid Jackpot Game",
+        "message_opened_bonus": "Invalid Bonus Game",
+        "no_data": null,
+        "all": null,
+        "message_loading": "Loading"
     },
     "FootballCoinToss": {
         "ars_wins": "อาร์เซนอลชนะ",

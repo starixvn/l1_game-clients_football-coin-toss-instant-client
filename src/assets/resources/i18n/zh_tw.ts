@@ -173,8 +173,10 @@ export const languages = {
         "pf_header_client_seed": "客戶種子",
         "pf_header_combined_sha512_hash": "組合 SHA512 哈希值",
         "pf_ header_merge_client_seed": "合併客戶種子",
+        "pf_ header_merge_client_seed_single": "合併客戶種子",
         "pf_header_server_seed": "服務器種子",
         "pf_header_server_seed_sha256": "服務器種子 SHA256",
+        "pf_header_server_seed_sha256_single": "服務器種子 SHA256",
         "pf_new_client_seed_para_1": "你的種子：",
         "pf_player_1": "玩家1",
         "pf_player_2": "玩家2",
@@ -224,7 +226,12 @@ export const languages = {
         "under_maintenance_time": "從 %{startTime} 到 %{endTime} (GMT+8)",
         "win": "贏",
         "win_loss": "贏 輸",
-        "you_reach_max_win": "您達到了最大勝利"
+        "you_reach_max_win": "您達到了最大勝利",
+        "invalid_payline": "invalid_payline",
+        "invalid_bonus": "invalid_bonus",
+        "opened_bonus": "opened_bonus",
+        "invalid_jackpot": "invalid_jackpot",
+        "opened_jackpot": "opened_jackpot"
     },
     "FootballCoinToss": {
         "ars_wins": "阿森納獲勝",

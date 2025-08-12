@@ -170,8 +170,10 @@ export const languages = {
         "pf_header_client_seed": "Seed Klien",
         "pf_header_combined_sha512_hash": "Gabungan hash SHA512",
         "pf_ header_merge_client_seed": "Gabungkan Seed Klien",
+        "pf_ header_merge_client_seed_single": "Gabungkan Seed Klien",
         "pf_header_server_seed": "Server Seed",
         "pf_header_server_seed_sha256": "Server Seed SHA256 ",
+        "pf_header_server_seed_sha256_single": "Server Seed SHA256 ",
         "pf_new_client_seed_para_1": "Seed Anda:",
         "pf_player_1": "Pemain 1",
         "pf_player_2": "Pemain 2",
@@ -221,7 +223,15 @@ export const languages = {
         "under_maintenance_time": "Mulai dari %{startTime} hingga %{endTime} (GMT+8)",
         "win": "Menang",
         "win_loss": "Menang Kalah",
-        "you_reach_max_win": "Anda mencapai Maksimal Menang"
+        "you_reach_max_win": "Anda mencapai Maksimal Menang",
+        "invalid_payline": "invalid_payline",
+        "invalid_bonus": "invalid_bonus",
+        "opened_bonus": "opened_bonus",
+        "invalid_jackpot": "invalid_jackpot",
+        "opened_jackpot": "opened_jackpot",
+        "no_data": null,
+        "all": null,
+        "message_loading": "Loading"
     },
     "FootballCoinToss": {
         "ars_wins": "Arsenal menang",
